@@ -7,12 +7,13 @@ import Contact from './components/Contact'
 import Index from './components/Index'
 import Header from './components/Header'
 import ThreeDCarousel from './components/splind'
+import Footer from './components/footer'
 
 function App() {
 
   return (
     <>
-      <div>
+      
         <BrowserRouter>
           <Header />
           <Routes>
@@ -23,8 +24,9 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/splind" element={<ThreeDCarousel />} />
           </Routes>
+          <Footer />
         </BrowserRouter>
-      </div>
+
     </>
   )
 }

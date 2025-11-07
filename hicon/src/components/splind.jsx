@@ -53,11 +53,7 @@ const ImageSplitServices = () => {
   return (
     <>
       <style>{`
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
+    
 
         .image-split-wrapper {
           background-color: #000;

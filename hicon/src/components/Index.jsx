@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { ChevronLeft, ChevronRight, Sparkles, Coffee, Zap, Heart, Brain, Moon, ArrowRight, Link } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Sparkles, Coffee, Zap, Heart, Brain, Moon, Award, Shield, Star } from 'lucide-react';
 import SmoothScroll from './smoothscroll';
 
 export default function Index() {
@@ -371,6 +371,72 @@ export default function Index() {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
+
+  //sec5 
+  const [activeFeature, setActiveFeature] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setIsVisible(true), 100);
+    const interval = setInterval(() => {
+      setActiveFeature((prev) => (prev + 1) % 4);
+    }, 3500);
+    return () => clearInterval(interval);
+  }, []);
+
+  const features = [
+    {
+      icon: "⚡",
+      title: "Synchro Mechanism",
+      desc: "Multi-position locking arrangement for optimal comfort"
+    },
+    {
+      icon: "🎯",
+      title: "Class-4 Gas Lift",
+      desc: "Premium seat height adjustment system"
+    },
+    {
+      icon: "🛡️",
+      title: "3 Year Warranty",
+      desc: "Comprehensive coverage on all components"
+    },
+    {
+      icon: "⭐",
+      title: "Nylon Castors",
+      desc: "Smooth & silent movement on any surface"
+    }
+  ];
+
+  const specs = [
+    { label: "Material", value: "Premium Quilted Leather" },
+    { label: "Color", value: "Turquoise Blue" },
+    { label: "Base", value: "Chrome Plated" },
+    { label: "Armrest", value: "Fixed with PU Pad" },
+    { label: "Warranty", value: "3 Years" },
+    { label: "Capacity", value: "Up to 120 kg" }
+  ];
+
+
+  //sec 6
+  const row1Items = [
+    { id: 1, title: "Premium Quality", icon: "⭐" },
+    { id: 2, title: "Fast Delivery", icon: "🚀" },
+    { id: 3, title: "Best Price", icon: "💰" },
+    { id: 4, title: "Customer Support", icon: "💬" },
+    { id: 5, title: "Easy Returns", icon: "🔄" },
+    { id: 6, title: "Warranty", icon: "🛡️" },
+  ];
+
+  const row2Items = [
+    { id: 7, title: "Secure Payment", icon: "🔒" },
+    { id: 8, title: "Free Shipping", icon: "📦" },
+    { id: 9, title: "24/7 Service", icon: "⏰" },
+    { id: 10, title: "Verified Products", icon: "✅" },
+    { id: 11, title: "Trusted Brand", icon: "🏆" },
+    { id: 12, title: "Quality Assured", icon: "👍" },
+  ];
+
+
   return (
     <div>
       <SmoothScroll>
@@ -400,7 +466,7 @@ export default function Index() {
                   className={`slide-text ${index === currentSlide ? 'active' : ''}`}
                 >
                   <h3 className="subtitle">{slide.subtitle}</h3>
-                  
+
                   <h1 className="title">{slide.title}</h1>
                   <p className="description">{slide.description}</p>
 
@@ -427,7 +493,6 @@ export default function Index() {
             ))}
           </div>
         </section>
-
 
         <section className="sec2">
           <div className="title-container">
@@ -685,6 +750,61 @@ export default function Index() {
               </div>
             </div>
 
+          </div>
+        </section>
+
+        <section className="sec5">
+
+          <div id="comparison-container">
+            <div id="comparison-wrapper">
+              <div id="comparison-card">
+                <div className="decorative-circle circle-left"></div>
+                <div className="decorative-circle circle-right"></div>
+
+                <div id="comparison-content">
+                  <div id="chair-section">
+                    <img
+                      id="chair-image"
+                      src="https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=600&h=600&fit=crop"
+                      alt="Ranger HB Chair"
+                    />
+                  </div>
+
+                  <div id="badge-section">
+                    <div className="bestseller-badge">BESTSELLER 2023</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section className="sec6">
+          <div id="slider-container">
+            {/* Row 1: Left to Right */}
+            <div className="slider-row row-left-to-right">
+              <div className="slider-track">
+                {[...row1Items, ...row1Items].map((item, index) => (
+                  <div key={`row1-${index}`} className="slider-item">
+                    <div className="item-icon">{item.icon}</div>
+                    <div className="item-title">{item.title}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Row 2: Right to Left */}
+            <div className="slider-row row-right-to-left">
+              <div className="slider-track">
+                {[...row2Items, ...row2Items].map((item, index) => (
+                  <div key={`row2-${index}`} className="slider-item">
+                    <div className="item-icon">{item.icon}</div>
+                    <div className="item-title">{item.title}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
       </SmoothScroll>
