@@ -1,19 +1,19 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import About from './components/About'
-import Shop from './components/Shop'
-import ArtOfSitting from './components/ArtOfSitting'
-import Contact from './components/Contact'
-import Index from './components/Index'
-import Header from './components/Header'
-import ThreeDCarousel from './components/splind'
-import Footer from './components/footer'
+import Index from './pages/Index';
+import About from './pages/About';
+import Shop from './pages/Shop';
+import ArtOfSitting from './pages/ArtOfSitting';
+import Contact from './pages/Contact';
+import ThreeDCarousel from './pages/splind';
+import Footer from './components/Footer';
+import Header from './components/Header';
+
 
 function App() {
 
   return (
     <>
-      
         <BrowserRouter>
           <Header />
           <Routes>

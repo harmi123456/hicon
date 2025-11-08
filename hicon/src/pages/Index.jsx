@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { ChevronLeft, ChevronRight, Sparkles, Coffee, Zap, Heart, Brain, Moon, Award, Shield, Star } from 'lucide-react';
-import SmoothScroll from './smoothscroll';
+import SmoothScroll from './Smoothscroll';
 
 export default function Index() {
-
 
   //sec 2 slider
   const [currentIndex, setCurrentIndex] = useState(0);

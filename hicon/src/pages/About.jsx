@@ -1,5 +1,5 @@
 import React from "react";
-import SmoothScroll from "./smoothscroll";
+import SmoothScroll from "./Smoothscroll";
 
 export default function About() {
   return (
