@@ -1,5 +1,5 @@
 import React from 'react'
-import SmoothScroll from '../pages/Smoothscroll'
+import SmoothScroll from './Smoothscroll'
 
 export default function Footer() {
   return (

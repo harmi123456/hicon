@@ -1,8 +1,66 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { ChevronLeft, ChevronRight, Sparkles, Coffee, Zap, Heart, Brain, Moon, Award, Shield, Star } from 'lucide-react';
-import SmoothScroll from './Smoothscroll';
+
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 export default function Index() {
+
+
+ useEffect(() => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Wait for Lenis to initialize, then create animations
+  const timer = setTimeout(() => {
+    
+    // Animation 1: Fade in
+    gsap.from('.sec2', {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: '.sec2',
+        start: 'top 80%',
+        end: 'top 50%',
+        scrub: 1,
+        markers: true, 
+      }
+    });
+
+    // Animation 2: Scale up
+    gsap.from('.sec3', {
+      scale: 0.8,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: '.sec3',
+        start: 'top 80%',
+        end: 'top 50%',
+        scrub: true,
+        markers: true, 
+      }
+    });
+
+    ScrollTrigger.create({
+      trigger: '.sec4',
+      start: 'top top',
+      end: '+=500',
+      pin: '.sec4', 
+      scrub: 1,
+      markers: true, 
+    });
+
+    ScrollTrigger.refresh();
+    
+  }, 100);
+
+  return () => {
+    clearTimeout(timer);
+    ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+  };
+}, []);
+
 
   //sec 2 slider
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -438,7 +496,6 @@ export default function Index() {
 
   return (
     <div>
-      <SmoothScroll>
         <section className="sec1 hero-slider">
           {/* Slides */}
           {slides.map((slide, index) => (
@@ -806,7 +863,6 @@ export default function Index() {
             </div>
           </div>
         </section>
-      </SmoothScroll>
     </div>
 
   )

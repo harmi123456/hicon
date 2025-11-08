@@ -8,13 +8,15 @@ import Contact from './pages/Contact';
 import ThreeDCarousel from './pages/splind';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import SmoothScroll from './components/Smoothscroll';
 
 
 function App() {
 
   return (
     <>
-        <BrowserRouter>
+      <BrowserRouter>
+        <SmoothScroll>
           <Header />
           <Routes>
             <Route path="/" element={<Index />} />
@@ -25,7 +27,8 @@ function App() {
             <Route path="/splind" element={<ThreeDCarousel />} />
           </Routes>
           <Footer />
-        </BrowserRouter>
+        </SmoothScroll>
+      </BrowserRouter>
 
     </>
   )
