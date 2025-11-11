@@ -1,9 +1,12 @@
-import React, { } from 'react'
+import React, { useEffect } from 'react'
 import {  ArrowRight } from 'lucide-react';
 
 export default function Shop() {
 
- 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="shop-wrapper">
       

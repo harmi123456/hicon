@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SmoothScroll from "../components/Smoothscroll";
 
 export default function About() {
+   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
       <SmoothScroll>
         <div className="about-wrapper">
