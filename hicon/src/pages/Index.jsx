@@ -16,20 +16,7 @@ export default function Index() {
     // Wait for Lenis to initialize, then create animations
     const timer = setTimeout(() => {
 
-      // Animation 1: Fade in
-      gsap.from('.sec2', {
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: '.sec2',
-          start: 'top 80%',
-          end: 'top 50%',
-          scrub: 1,
-          markers: true,
-        }
-      });
+
 
       // Animation 2: Scale up
       gsap.from('.sec3', {
@@ -41,21 +28,13 @@ export default function Index() {
           start: 'top 80%',
           end: 'top 50%',
           scrub: true,
-          markers: true,
-        }
+          // markers removed
+        },
       });
 
-      ScrollTrigger.create({
-        trigger: '.sec4',
-        start: 'top top',
-        end: '+=500',
-        pin: '.sec4',
-        scrub: 1,
-        markers: true,
-      });
+      // Removed sec4 pinning animation entirely
 
       ScrollTrigger.refresh();
-
     }, 100);
 
     return () => {
@@ -812,9 +791,53 @@ export default function Index() {
         </div>
       </section>
 
-      <div className="model"><ModelViewer /></div>
+      <div className="sec5">
+        <div className="model"><ModelViewer /></div>
+        <div className="bestseller-sec">
+          <div className="bestseller-content">
+            <span className="badge">Bestseller Collection</span>
+            <h2>Premium Ergonomic Chairs</h2>
+            <p className="description">
+              Experience ultimate comfort with our best-selling ergonomic chairs.
+              Designed for long hours of work with superior back support and adjustable features.
+            </p>
 
-      <section className="sec5">
+            <div className="features">
+              <div className="feature-item">
+                <span className="icon">✓</span>
+                <span>Lumbar Support</span>
+              </div>
+              <div className="feature-item">
+                <span className="icon">✓</span>
+                <span>Height Adjustable</span>
+              </div>
+              <div className="feature-item">
+                <span className="icon">✓</span>
+                <span>360° Rotation</span>
+              </div>
+              <div className="feature-item">
+                <span className="icon">✓</span>
+                <span>Premium Material</span>
+              </div>
+            </div>
+
+            {/* <div className="price-section">
+        <span className="old-price">₹18,999</span>
+        <span className="new-price">₹14,999</span>
+        <span className="discount">21% OFF</span>
+      </div> */}
+
+            <button className="shop-now-btn">
+              Shop Now
+              <span className="arrow">→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+      {/* <section className="sec5">
 
         <div id="comparison-container">
           <div id="comparison-wrapper">
@@ -839,7 +862,7 @@ export default function Index() {
           </div>
         </div>
 
-      </section>
+      </section> */}
 
       <section className="sec6">
         <div id="slider-container">

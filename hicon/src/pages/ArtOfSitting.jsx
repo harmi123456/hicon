@@ -352,223 +352,6 @@ export default function ArtOfSitting() {
   ];
 
 
-
-
-
-  //sec1
-   const [activeOption, setActiveOption] = useState(1);
-
-  // Option 1: Modern Split with Image
-  const Option1 = () => (
-    <section style={{
-      minHeight: '100vh',
-      display: 'flex',
-      alignItems: 'center',
-      background: 'linear-gradient(135deg, #ffffff 0%, #f6f6f6 100%)',
-      padding: '0 50px'
-    }}>
-      <div style={{ maxWidth: '1400px', margin: '0 auto', width: '100%' }}>
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
-          gap: '80px',
-          alignItems: 'center'
-        }}>
-          <div>
-            <div style={{
-              display: 'inline-block',
-              padding: '8px 20px',
-              background: 'rgba(172, 39, 38, 0.1)',
-              borderRadius: '30px',
-              color: '#ac2726',
-              fontSize: '0.9rem',
-              fontWeight: '600',
-              marginBottom: '30px'
-            }}>
-              🪑 Ergonomic Solutions
-            </div>
-            <h1 style={{
-              fontSize: '4.5rem',
-              fontWeight: '900',
-              color: '#2b2b2b',
-              lineHeight: '1.1',
-              marginBottom: '25px',
-              letterSpacing: '-2px'
-            }}>
-              Master the<br/>
-              <span style={{ color: '#ac2726' }}>Art of Sitting</span>
-            </h1>
-            <p style={{
-              fontSize: '1.3rem',
-              color: '#666',
-              lineHeight: '1.8',
-              marginBottom: '40px',
-              maxWidth: '500px'
-            }}>
-              Transform your health with proper posture. Say goodbye to back pain, neck strain, and discomfort.
-            </p>
-            <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
-              <button style={{
-                padding: '18px 40px',
-                background: '#ac2726',
-                color: 'white',
-                border: 'none',
-                borderRadius: '50px',
-                fontSize: '1.1rem',
-                fontWeight: '700',
-                cursor: 'pointer',
-                boxShadow: '0 10px 30px rgba(172, 39, 38, 0.25)'
-              }}>
-                Explore Chairs →
-              </button>
-              <button style={{
-                padding: '18px 40px',
-                background: 'transparent',
-                color: '#2b2b2b',
-                border: '2px solid #2b2b2b',
-                borderRadius: '50px',
-                fontSize: '1.1rem',
-                fontWeight: '700',
-                cursor: 'pointer'
-              }}>
-                Learn More
-              </button>
-            </div>
-            <div style={{ display: 'flex', gap: '40px', marginTop: '50px' }}>
-              <div>
-                <h3 style={{ fontSize: '2.5rem', fontWeight: '900', color: '#ac2726', marginBottom: '5px' }}>10K+</h3>
-                <p style={{ color: '#666', fontSize: '0.95rem' }}>Happy Customers</p>
-              </div>
-              <div>
-                <h3 style={{ fontSize: '2.5rem', fontWeight: '900', color: '#ac2726', marginBottom: '5px' }}>4.9★</h3>
-                <p style={{ color: '#666', fontSize: '0.95rem' }}>Average Rating</p>
-              </div>
-              <div>
-                <h3 style={{ fontSize: '2.5rem', fontWeight: '900', color: '#ac2726', marginBottom: '5px' }}>24/7</h3>
-                <p style={{ color: '#666', fontSize: '0.95rem' }}>Support</p>
-              </div>
-            </div>
-          </div>
-          
-          <div style={{
-            background: 'linear-gradient(135deg, #ac2726 0%, #8a1f1e 100%)',
-            borderRadius: '30px',
-            padding: '60px',
-            position: 'relative',
-            boxShadow: '0 20px 60px rgba(172, 39, 38, 0.3)'
-          }}>
-            <div style={{ textAlign: 'center', color: 'white' }}>
-              <div style={{ fontSize: '8rem', marginBottom: '20px' }}>🪑</div>
-              <h3 style={{ fontSize: '2rem', marginBottom: '15px', fontWeight: '700' }}>Perfect Posture</h3>
-              <p style={{ fontSize: '1.1rem', opacity: '0.9' }}>
-                Ergonomically designed for your comfort and health
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-
-  // Option 2: Centered Hero with Features
-  const Option2 = () => (
-    <section style={{
-      minHeight: '100vh',
-      display: 'flex',
-      alignItems: 'center',
-      background: 'linear-gradient(180deg, #ffffff 0%, #f6f6f6 100%)',
-      padding: '80px 50px',
-      textAlign: 'center'
-    }}>
-      <div style={{ maxWidth: '1200px', margin: '0 auto', width: '100%' }}>
-        <div style={{
-          display: 'inline-block',
-          padding: '10px 25px',
-          background: '#ac2726',
-          color: 'white',
-          borderRadius: '30px',
-          fontSize: '0.9rem',
-          fontWeight: '600',
-          marginBottom: '30px'
-        }}>
-          ✨ Premium Ergonomic Solutions
-        </div>
-        
-        <h1 style={{
-          fontSize: '5.5rem',
-          fontWeight: '900',
-          color: '#2b2b2b',
-          lineHeight: '1.1',
-          marginBottom: '30px',
-          letterSpacing: '-2px'
-        }}>
-          The Art of<br/>
-          <span style={{
-            background: 'linear-gradient(135deg, #ac2726, #8a1f1e)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent'
-          }}>
-            Perfect Sitting
-          </span>
-        </h1>
-        
-        <p style={{
-          fontSize: '1.4rem',
-          color: '#666',
-          lineHeight: '1.8',
-          marginBottom: '50px',
-          maxWidth: '700px',
-          margin: '0 auto 50px'
-        }}>
-          Learn professional techniques to eliminate back pain, improve posture, and boost productivity through proper sitting habits
-        </p>
-        
-        <button style={{
-          padding: '22px 55px',
-          background: '#ac2726',
-          color: 'white',
-          border: 'none',
-          borderRadius: '50px',
-          fontSize: '1.2rem',
-          fontWeight: '700',
-          cursor: 'pointer',
-          boxShadow: '0 15px 40px rgba(172, 39, 38, 0.3)',
-          marginBottom: '80px'
-        }}>
-          Start Your Journey →
-        </button>
-        
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(4, 1fr)',
-          gap: '30px',
-          marginTop: '60px'
-        }}>
-          {[
-            { icon: '👣', title: 'Feet Position', desc: 'Proper foot placement' },
-            { icon: '🪑', title: 'Back Support', desc: 'Lumbar alignment' },
-            { icon: '💪', title: 'Arm Rest', desc: 'Shoulder relaxation' },
-            { icon: '🖥️', title: 'Screen Level', desc: 'Eye comfort' }
-          ].map((item, i) => (
-            <div key={i} style={{
-              background: 'white',
-              padding: '35px 25px',
-              borderRadius: '20px',
-              boxShadow: '0 10px 30px rgba(0,0,0,0.08)',
-              border: '2px solid #dcdcdc'
-            }}>
-              <div style={{ fontSize: '3.5rem', marginBottom: '15px' }}>{item.icon}</div>
-              <h4 style={{ fontSize: '1.2rem', fontWeight: '700', color: '#2b2b2b', marginBottom: '8px' }}>
-                {item.title}
-              </h4>
-              <p style={{ fontSize: '0.95rem', color: '#666' }}>{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-
   // Option 3: Full Width with Background
   const Option3 = () => (
     <section style={{
@@ -630,37 +413,11 @@ export default function ArtOfSitting() {
                 cursor: 'pointer',
                 boxShadow: '0 10px 30px rgba(0,0,0,0.2)'
               }}>
-                Get Started
+                Explor Collection
               </button>
-              <button style={{
-                padding: '20px 45px',
-                background: 'transparent',
-                color: 'white',
-                border: '2px solid white',
-                borderRadius: '50px',
-                fontSize: '1.15rem',
-                fontWeight: '700',
-                cursor: 'pointer'
-              }}>
-                Watch Video ▶
-              </button>
+              
             </div>
             
-            <div style={{
-              background: 'rgba(255,255,255,0.1)',
-              backdropFilter: 'blur(10px)',
-              padding: '30px',
-              borderRadius: '20px',
-              border: '1px solid rgba(255,255,255,0.2)'
-            }}>
-              <p style={{ fontSize: '0.95rem', marginBottom: '15px', opacity: '0.9' }}>Trusted by industry leaders:</p>
-              <div style={{ display: 'flex', gap: '30px', fontSize: '1.8rem' }}>
-                <span>Google</span>
-                <span>Microsoft</span>
-                <span>Apple</span>
-                <span>Amazon</span>
-              </div>
-            </div>
           </div>
           
           <div style={{
@@ -687,105 +444,13 @@ export default function ArtOfSitting() {
 
   return (
     <div className="art-of-sitting-white" ref={containerRef}>
-      {/* Hero Section */}
-      <section className="hero-section">
-        <div className="container">
-          <div className="hero-grid">
-            <div className="hero-content">
-              <h1 className="hero-title">The Art of Sitting</h1>
-              <p className="hero-subtitle">
-                Learn the correct way to sit and eliminate neck pain, back pain forever
-              </p>
-              <button className="hero-cta" onClick={() => navigate("/chairs")}>
-                Explore Ergonomic Chairs
-                <span className="arrow">→</span>
-              </button>
-            </div>
-            
-            <div className="hero-visual">
-              <div className="sitting-person">
-                <div className="person-illustration">
-                  <div className="head">😊</div>
-                  <div className="body"></div>
-                  <div className="arms"></div>
-                  <div className="chair-base">
-                    <div className="chair-back"></div>
-                    <div className="chair-seat"></div>
-                    <div className="chair-wheels">
-                      <span>⚙️</span>
-                      <span>⚙️</span>
-                    </div>
-                  </div>
-                </div>
-                <p className="posture-label">✓ Correct Posture</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+   
 
      <div>
-      {/* Option Selector */}
-      <div style={{
-        position: 'fixed',
-        top: '20px',
-        right: '20px',
-        zIndex: 1000,
-        background: 'white',
-        padding: '15px',
-        borderRadius: '15px',
-        boxShadow: '0 10px 40px rgba(0,0,0,0.15)',
-        display: 'flex',
-        gap: '10px'
-      }}>
-        <button
-          onClick={() => setActiveOption(1)}
-          style={{
-            padding: '10px 20px',
-            background: activeOption === 1 ? '#ac2726' : '#f6f6f6',
-            color: activeOption === 1 ? 'white' : '#2b2b2b',
-            border: 'none',
-            borderRadius: '8px',
-            fontWeight: '600',
-            cursor: 'pointer'
-          }}
-        >
-          Option 1
-        </button>
-        <button
-          onClick={() => setActiveOption(2)}
-          style={{
-            padding: '10px 20px',
-            background: activeOption === 2 ? '#ac2726' : '#f6f6f6',
-            color: activeOption === 2 ? 'white' : '#2b2b2b',
-            border: 'none',
-            borderRadius: '8px',
-            fontWeight: '600',
-            cursor: 'pointer'
-          }}
-        >
-          Option 2
-        </button>
-        <button
-          onClick={() => setActiveOption(3)}
-          style={{
-            padding: '10px 20px',
-            background: activeOption === 3 ? '#ac2726' : '#f6f6f6',
-            color: activeOption === 3 ? 'white' : '#2b2b2b',
-            border: 'none',
-            borderRadius: '8px',
-            fontWeight: '600',
-            cursor: 'pointer'
-          }}
-        >
-          Option 3
-        </button>
-      </div>
+   
 
       {/* Display Selected Option */}
-      {activeOption === 1 && <Option1 />}
-      {activeOption === 2 && <Option2 />}
-      {activeOption === 3 && <Option3 />}
+       <Option3 />
     </div>
 
       {/* Posture Steps */}
@@ -903,7 +568,7 @@ export default function ArtOfSitting() {
           <div className="stats-grid">
             <div className="stat-item">
               <h3 className="stat-number">80</h3>
-              <p>% People Have Back Pain</p>
+              <p> People Have Back Pain</p>
               <span className="stat-subtext">from Poor Posture</span>
             </div>
             <div className="stat-item">
@@ -926,7 +591,7 @@ export default function ArtOfSitting() {
           <div className="cta-content">
             <h2>Ready for Pain-Free Sitting?</h2>
             <p>Explore our collection of ergonomic chairs designed for ultimate comfort</p>
-            <button className="cta-button" onClick={() => navigate("/chairs")}>
+            <button className="cta-button" onClick={() => navigate("/chair")}>
               Shop Ergonomic Chairs
               <span className="arrow">→</span>
             </button>
