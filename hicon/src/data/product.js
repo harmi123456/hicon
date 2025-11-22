@@ -7,8 +7,7 @@ export const products = [
     name: "Executive Office Chair",
     category: "office",
     type: "chair",
-    price: 5999,
-    image: "/images/office-chair-1.jpg",
+    image: "/img/chair_1.jpg",
     description: "Ergonomic design with lumbar support for long working hours"
   },
   {
@@ -17,7 +16,7 @@ export const products = [
     category: "office",
     type: "chair",
     price: 4499,
-    image: "/images/office-chair-2.jpg",
+    image: "/img/chair_2.jpg",
     description: "Breathable mesh back with adjustable armrests"
   },
   {
@@ -26,7 +25,7 @@ export const products = [
     category: "office",
     type: "chair",
     price: 12999,
-    image: "/images/office-chair-3.jpg",
+    image: "/img/chair_3.jpg",
     description: "Luxurious leather upholstery with 360° swivel"
   },
 
@@ -37,7 +36,7 @@ export const products = [
     category: "gaming",
     type: "chair",
     price: 8999,
-    image: "/images/gaming-chair-1.jpg",
+    image: "/img/chair_4.jpg",
     description: "High-back gaming chair with RGB lighting"
   },
   {
@@ -46,7 +45,7 @@ export const products = [
     category: "gaming",
     type: "chair",
     price: 10999,
-    image: "/images/gaming-chair-2.jpg",
+    image: "/img/chair_5.jpg",
     description: "Racing-inspired design with reclining feature"
   },
   {
@@ -55,7 +54,7 @@ export const products = [
     category: "gaming",
     type: "chair",
     price: 15999,
-    image: "/images/gaming-chair-3.jpg",
+    image: "/img/chair_6.jpg",
     description: "Tournament-grade chair with 4D armrests"
   },
 
@@ -66,7 +65,7 @@ export const products = [
     category: "dining",
     type: "chair",
     price: 2999,
-    image: "/images/dining-chair-1.jpg",
+    image: "/img/chair_7.jpg",
     description: "Sleek wooden design perfect for dining rooms"
   },
   {
@@ -75,7 +74,7 @@ export const products = [
     category: "dining",
     type: "chair",
     price: 3499,
-    image: "/images/dining-chair-2.jpg",
+    image: "/img/chair_8.jpg",
     description: "Comfortable padded seat with elegant finish"
   },
   {
@@ -84,7 +83,7 @@ export const products = [
     category: "dining",
     type: "chair",
     price: 2499,
-    image: "/images/dining-chair-3.jpg",
+    image: "/img/chair_9.jpg",
     description: "Traditional design with solid wood construction"
   },
 
@@ -95,7 +94,7 @@ export const products = [
     category: "outdoor",
     type: "chair",
     price: 4999,
-    image: "/images/outdoor-chair-1.jpg",
+    image: "/img/chair_10.jpg",
     description: "Weather-resistant material for outdoor use"
   },
   {
@@ -104,7 +103,7 @@ export const products = [
     category: "outdoor",
     type: "chair",
     price: 5499,
-    image: "/images/outdoor-chair-2.jpg",
+    image: "/img/chair_11.jpg",
     description: "Comfortable rocking chair for your patio"
   },
   {
@@ -113,7 +112,7 @@ export const products = [
     category: "outdoor",
     type: "chair",
     price: 1999,
-    image: "/images/outdoor-chair-3.jpg",
+    image: "/img/chair_12.jpg",
     description: "Portable and lightweight for beach trips"
   },
 
@@ -124,7 +123,7 @@ export const products = [
     category: "kids",
     type: "chair",
     price: 1499,
-    image: "/images/kids-chair-1.jpg",
+    image: "/img/chair_13.jpg",
     description: "Safe and colorful chair for children"
   },
   {
@@ -133,7 +132,7 @@ export const products = [
     category: "kids",
     type: "chair",
     price: 2499,
-    image: "/images/kids-chair-2.jpg",
+    image: "/img/chair_14.jpg",
     description: "Adjustable height chair for growing kids"
   },
   {
@@ -142,10 +141,11 @@ export const products = [
     category: "kids",
     type: "chair",
     price: 1799,
-    image: "/images/kids-chair-3.jpg",
+    image: "/img/chair_15.jpg",
     description: "Fun design with favorite cartoon characters"
   },
 
+  
   // Sofas - Living Room
   {
     id: 16,

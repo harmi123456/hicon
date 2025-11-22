@@ -74,11 +74,11 @@ export default function Chairdetails() {
           <h1 className="product-name">{chair.name}</h1>
 
           {/* Price */}
-          <div className="price-section">
+          {/* <div className="price-section">
             <span className="current-price">₹{chair.price.toLocaleString()}</span>
             <span className="original-price">₹{(chair.price * 1.3).toLocaleString()}</span>
             <span className="discount">30% OFF</span>
-          </div>
+          </div> */}
 
           {/* Rating */}
           <div className="rating-section">

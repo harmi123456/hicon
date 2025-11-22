@@ -66,7 +66,6 @@ function Chair() {
             </div>
             <h3>{chair.name}</h3>
             <p className="description">{chair.description}</p>
-            <p className="price">₹{chair.price.toLocaleString()}</p>
             <button className="buy-btn">View Details</button>
           </div>
         ))}
