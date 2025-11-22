@@ -70,7 +70,6 @@ function Sofa() {
             </div>
             <h3>{sofa.name}</h3>
             <p className="description">{sofa.description}</p>
-            <p className="price">₹{sofa.price.toLocaleString()}</p>
             <button className="buy-btn">View Details</button>
           </div>
         ))}

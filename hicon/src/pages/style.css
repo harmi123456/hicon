@@ -2964,7 +2964,7 @@
 }
 
 .product-card .buy-btn:hover {
-  background: #8e44ad;
+  background: var(--hover-color);
 }
 
 /* Responsive Design */

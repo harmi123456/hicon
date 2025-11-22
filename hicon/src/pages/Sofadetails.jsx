@@ -51,15 +51,10 @@ export default function Sofadetails() {
     );
   }
 
-  const totalPrice = sofa.price * quantity;
 
   return (
     <div className="sofa-details-container">
-      {/* Back Button */}
-      <button className="back-button" onClick={handleBackClick}>
-        ← Back to Sofas
-      </button>
-
+    
       {/* Detail Content */}
       <div className="detail-wrapper">
         {/* Left Side - Image */}
@@ -80,11 +75,11 @@ export default function Sofadetails() {
           <h1 className="product-name">{sofa.name}</h1>
 
           {/* Price */}
-          <div className="price-section">
+          {/* <div className="price-section">
             <span className="current-price">₹{sofa.price.toLocaleString()}</span>
             <span className="original-price">₹{(sofa.price * 1.3).toLocaleString()}</span>
             <span className="discount">30% OFF</span>
-          </div>
+          </div> */}
 
           {/* Rating */}
           <div className="rating-section">
@@ -135,10 +130,10 @@ export default function Sofadetails() {
           </div>
 
           {/* Total Price */}
-          <div className="total-price-section">
+          {/* <div className="total-price-section">
             <span>Total Price:</span>
             <span className="total-price">₹{totalPrice.toLocaleString()}</span>
-          </div>
+          </div> */}
 
           {/* Action Buttons */}
           <div className="action-buttons">
