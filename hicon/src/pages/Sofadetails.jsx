@@ -4,53 +4,53 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { products } from '../data/product';
 
 export default function Sofadetails() {
-  const { sofaId } = useParams();
-  const navigate = useNavigate();
-  const [sofa, setSofa] = useState(null);
-  const [quantity, setQuantity] = useState(1);
+ const { slug } = useParams();
+const navigate = useNavigate();
+const [sofa, setSofa] = useState(null);
+const [quantity, setQuantity] = useState(1);
 
-  // Extract sofa ID from URL (format: "16-3-seater-fabric-sofa")
-  const extractSofaId = (paramId) => {
-    return parseInt(paramId.split('-')[0]);
-  };
+// Convert name → slug function
+const toSlug = (name) =>
+  name
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[^a-z0-9-]/g, "");
 
-  // Load sofa data from URL parameter
-  useEffect(() => {
-    // Scroll to top when component mounts
-    window.scrollTo(0, 0);
+// Load sofa data using slug
+useEffect(() => {
+  window.scrollTo(0, 0);
 
-    const id = extractSofaId(sofaId);
-    const foundSofa = products.find(p => p.id === id && p.type === 'sofa');
-    
-    if (foundSofa) {
-      setSofa(foundSofa);
-    } else {
-      // If sofa not found, redirect to sofas list
-      navigate('/sofas');
-    }
-  }, [sofaId, navigate]);
+  const foundSofa = products.find(
+    (p) => p.type === "sofa" && toSlug(p.name) === slug
+  );
 
-  const handleQuantityChange = (type) => {
-    if (type === 'increase') {
-      setQuantity(prev => prev + 1);
-    } else if (type === 'decrease' && quantity > 1) {
-      setQuantity(prev => prev - 1);
-    }
-  };
-
-  const handleBackClick = () => {
-    navigate('/sofas');
-  };
-
-  // Show loading state while sofa data is being fetched
-  if (!sofa) {
-    return (
-      <div className="loading-container">
-        <div className="loading-spinner">Loading...</div>
-      </div>
-    );
+  if (foundSofa) {
+    setSofa(foundSofa);
+  } else {
+    navigate("/sofas");
   }
+}, [slug, navigate]);
 
+const handleQuantityChange = (type) => {
+  if (type === "increase") {
+    setQuantity((prev) => prev + 1);
+  } else if (type === "decrease" && quantity > 1) {
+    setQuantity((prev) => prev - 1);
+  }
+};
+
+const handleBackClick = () => {
+  navigate("/sofas");
+};
+
+// Loading UI
+if (!sofa) {
+  return (
+    <div className="loading-container">
+      <div className="loading-spinner">Loading...</div>
+    </div>
+  );
+}
 
   return (
     <div className="sofa-details-container">

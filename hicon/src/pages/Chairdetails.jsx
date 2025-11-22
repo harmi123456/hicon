@@ -4,50 +4,50 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { products } from '../data/product';
 
 export default function Chairdetails() {
-  const { chairId } = useParams();
-  const navigate = useNavigate();
-  const [chair, setChair] = useState(null);
-  const [quantity, setQuantity] = useState(1);
+  const { slug } = useParams();
+const navigate = useNavigate();
+const [chair, setChair] = useState(null);
+const [quantity, setQuantity] = useState(1);
 
-  // Extract chair ID from URL (format: "1-executive-office-chair")
-  const extractChairId = (paramId) => {
-    return parseInt(paramId.split('-')[0]);
-  };
+// Convert name → slug
+const toSlug = (name) =>
+  name
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[^a-z0-9-]/g, "");
 
-  // Load chair data from URL parameter
-  useEffect(() => {
-    // Scroll to top when component mounts
-    window.scrollTo(0, 0);
+// Load chair data using slug
+useEffect(() => {
+  window.scrollTo(0, 0);
 
-    const id = extractChairId(chairId);
-    const foundChair = products.find(p => p.id === id && p.type === 'chair');
-    
-    if (foundChair) {
-      setChair(foundChair);
-    } else {
-      // If chair not found, redirect to chairs list
-      navigate('/chairs');
-    }
-  }, [chairId, navigate]);
+  const foundChair = products.find(
+    (p) => p.type === "chair" && toSlug(p.name) === slug
+  );
 
-  const handleQuantityChange = (type) => {
-    if (type === 'increase') {
-      setQuantity(prev => prev + 1);
-    } else if (type === 'decrease' && quantity > 1) {
-      setQuantity(prev => prev - 1);
-    }
-  };
-
-
-
-  // Show loading state while chair data is being fetched
-  if (!chair) {
-    return (
-      <div className="loading-container">
-        <div className="loading-spinner">Loading...</div>
-      </div>
-    );
+  if (foundChair) {
+    setChair(foundChair);
+  } else {
+    navigate("/chairs");
   }
+}, [slug, navigate]);
+
+const handleQuantityChange = (type) => {
+  if (type === "increase") {
+    setQuantity((prev) => prev + 1);
+  } else if (type === "decrease" && quantity > 1) {
+    setQuantity((prev) => prev - 1);
+  }
+};
+
+// Loading UI
+if (!chair) {
+  return (
+    <div className="loading-container">
+      <div className="loading-spinner">Loading...</div>
+    </div>
+  );
+}
+
 
   const totalPrice = chair.price * quantity;
 

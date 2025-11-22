@@ -28,9 +28,9 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="/chair" element={<Chair />} />
-            <Route path="/chairs/:chairId" element={<Chairdetails />} />
+            <Route path="/chairs/:slug" element={<Chairdetails />} />
             <Route path="/sofa" element={<Sofa />} />
-            <Route path="/sofas/:sofaId" element={<Sofadetails />} />
+            <Route path="/sofas/:slug" element={<Sofadetails />} />
             <Route path="/art-of-sitting" element={<ArtOfSitting />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/splind" element={<ThreeDCarousel />} />

@@ -11,32 +11,29 @@ function Chair() {
   const chairs = products.filter(product => product.type === 'chair');
 
   // Further filter by category if selected
-  const filteredChairs = selectedCategory === 'all' 
-    ? chairs 
+  const filteredChairs = selectedCategory === 'all'
+    ? chairs
     : chairs.filter(chair => chair.category === selectedCategory);
 
   // Handle chair card click - Navigate to detail page
-  const handleChairClick = (chair) => {
-    // Create URL-friendly name
-    const chairSlug = chair.name
-      .toLowerCase()
-      .replace(/\s+/g, '-')
-      .replace(/[^a-z0-9-]/g, '');
-    
-    // Navigate to detail page with chair ID
-    navigate(`/chairs/${chair.id}-${chairSlug}`);
-    
-    // Scroll to top when navigating
-    window.scrollTo(0, 0);
-  };
+ const handleChairClick = (chair) => {
+  const chairSlug = chair.name
+    .toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^a-z0-9-]/g, '');
+
+  navigate(`/chairs/${chairSlug}`);
+  window.scrollTo(0, 0);
+};
+
 
   return (
     <div className="chair-page">
       <h1>Our Chair Collection</h1>
-      
+
       {/* Category Filter */}
       <div className="category-filter">
-        <button 
+        <button
           className={selectedCategory === 'all' ? 'active' : ''}
           onClick={() => setSelectedCategory('all')}
         >
@@ -56,8 +53,8 @@ function Chair() {
       {/* Products Grid */}
       <div className="products-grid">
         {filteredChairs.map(chair => (
-          <div 
-            key={chair.id} 
+          <div
+            key={chair.id}
             className="product-card"
             onClick={() => handleChairClick(chair)}
           >

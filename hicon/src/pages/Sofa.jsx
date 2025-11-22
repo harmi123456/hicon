@@ -26,11 +26,11 @@ function Sofa() {
       .toLowerCase()
       .replace(/\s+/g, '-')
       .replace(/[^a-z0-9-]/g, '');
-    
-    // Navigate to detail page with sofa ID
-    navigate(`/sofas/${sofa.id}-${sofaSlug}`);
-    
-    // Scroll to top when navigating
+
+    // Navigate to detail page WITHOUT ID
+    navigate(`/sofas/${sofaSlug}`);
+
+    // Scroll to top
     window.scrollTo(0, 0);
   };
 
@@ -60,8 +60,8 @@ function Sofa() {
       {/* Products Grid */}
       <div className="products-grid">
         {filteredSofas.map(sofa => (
-          <div 
-            key={sofa.id} 
+          <div
+            key={sofa.id}
             className="product-card"
             onClick={() => handleSofaClick(sofa)}
           >
