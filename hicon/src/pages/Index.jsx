@@ -1,5 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { ChevronLeft, ChevronRight, Sparkles, Coffee, Zap, Heart, Brain, Moon, Award, Shield, Star } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
+
+gsap.registerPlugin(ScrollTrigger);
 
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -15,9 +18,6 @@ export default function Index() {
 
     // Wait for Lenis to initialize, then create animations
     const timer = setTimeout(() => {
-
-
-
       // Animation 2: Scale up
       gsap.from('.sec3', {
         scale: 0.8,
@@ -476,6 +476,71 @@ export default function Index() {
   ];
 
 
+
+
+  //new code
+  const stickyRef = useRef(null);
+  const imageLeftRef = useRef(null);
+  const imageRightRef = useRef(null);
+  const servicesRef = useRef(null);
+  const serviceItemsRef = useRef([]);
+
+  const services = [
+    { title: "Architecture Design", description: "Innovative and sustainable architectural solutions" },
+    { title: "Interior Design", description: "Creating beautiful and functional interior spaces" },
+    { title: "Urban Planning", description: "Strategic planning for modern urban development" },
+    { title: "Landscape Design", description: "Harmonizing nature with built environments" },
+    { title: "3D Visualization", description: "Photorealistic renders and virtual tours" },
+  ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!stickyRef.current || !imageLeftRef.current || !imageRightRef.current || !servicesRef.current) return;
+
+      const stickyTop = stickyRef.current.offsetTop;
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+
+      // Calculate progress (0 to 1)
+      const progress = Math.max(0, Math.min(1, (scrollPosition - stickyTop) / windowHeight));
+
+      // Image split animation
+      const maxSplit = 60; // Maximum percentage to move
+      const translateX = progress * maxSplit;
+      
+      if (imageLeftRef.current) {
+        imageLeftRef.current.style.transform = `translateX(-${translateX}%)`;
+      }
+      if (imageRightRef.current) {
+        imageRightRef.current.style.transform = `translateX(${translateX}%)`;
+      }
+
+      // Services fade and scale
+      if (servicesRef.current) {
+        const scale = 0.8 + (progress * 0.2);
+        const opacity = progress;
+        servicesRef.current.style.opacity = opacity;
+        servicesRef.current.style.transform = `scale(${scale})`;
+      }
+
+      // Stagger service items
+      serviceItemsRef.current.forEach((item, index) => {
+        if (item) {
+          const delay = index * 0.1;
+          const itemProgress = Math.max(0, Math.min(1, progress - delay));
+          item.style.opacity = itemProgress;
+          item.style.transform = `translateY(${(1 - itemProgress) * 30}px)`;
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial call
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+
   return (
     <div>
       <section className="sec1 hero-slider">
@@ -836,6 +901,63 @@ export default function Index() {
       </div>
 
 
+      
+
+       {/* Sticky Image Section with Split Effect */}
+         <section ref={stickyRef} className="sticky-section">
+        <div className="images-wrapper">
+          {/* Left Half of Image */}
+          <div ref={imageLeftRef} className="image-half image-left">
+            <img 
+              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&h=1080&fit=crop&q=80" 
+              alt="Architecture"
+              className="split-image"
+            />
+          </div>
+
+          {/* Right Half of Image */}
+          <div ref={imageRightRef} className="image-half image-right">
+            <img 
+              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&h=1080&fit=crop&q=80" 
+              alt="Architecture"
+              className="split-image"
+            />
+          </div>
+        </div>
+
+        {/* Services Content */}
+        <div ref={servicesRef} className="services-overlay">
+          <div className="services-container">
+            <h2 className="services-title">SERVICES</h2>
+            
+            <div className="services-list">
+              {services.map((service, index) => (
+                <div 
+                  key={index} 
+                  className="service-item"
+                  ref={el => serviceItemsRef.current[index] = el}
+                >
+                  <div className="service-card">
+                    <div className="service-left">
+                      <div className="service-icon">
+                        <div className="service-dot"></div>
+                      </div>
+                      <div className="service-content">
+                        <h3>{service.title}</h3>
+                        <p>{service.description}</p>
+                      </div>
+                    </div>
+                    
+                    <div className="service-arrow">
+                      <ArrowUpRight color="#fff" size={24} />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* <section className="sec5">
 

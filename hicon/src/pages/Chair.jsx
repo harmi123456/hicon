@@ -20,7 +20,7 @@ function Chair() {
   const chairSlug = chair.name
     .toLowerCase()
     .replace(/\s+/g, '-')
-    .replace(/[^a-z0-9-]/g, '');
+    .replace(/[^a-z0-9-]/g, '');  
 
   navigate(`/chairs/${chairSlug}`);
   window.scrollTo(0, 0);
