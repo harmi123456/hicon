@@ -454,7 +454,7 @@ export default function ArtOfSitting() {
     </div>
 
       {/* Posture Steps */}
-      <section className="posture-section">
+      <section className="posture-section sitting-padding">
         <div className="container">
           <h2 className="section-title">How to Sit Correctly?</h2>
           <p className="section-subtitle">4 Important Steps for Perfect Sitting Posture</p>
@@ -477,7 +477,7 @@ export default function ArtOfSitting() {
       </section>
 
       {/* Mistakes Section */}
-      <section className="mistakes-section">
+      <section className="mistakes-section sitting-padding">
         <div className="container">
           <h2 className="section-title">Common Mistakes & Corrections</h2>
           <p className="section-subtitle">Avoid these mistakes and stay pain-free</p>
@@ -500,7 +500,7 @@ export default function ArtOfSitting() {
       </section>
 
       {/* Tips Section */}
-      <section className="tips-section">
+      <section className="tips-section sitting-padding">
         <div className="container">
           <div className="tips-grid">
             <div className="tips-left">
@@ -543,7 +543,7 @@ export default function ArtOfSitting() {
       </section>
 
       {/* Benefits Section */}
-      <section className="benefits-section">
+      <section className="benefits-section sitting-padding">
         <div className="container">
           <h2 className="section-title">Benefits of Proper Sitting</h2>
           <p className="section-subtitle">Transform your health with correct posture</p>
@@ -563,7 +563,7 @@ export default function ArtOfSitting() {
       </section>
 
       {/* Stats Section */}
-      <section className="stats-section">
+      <section className="stats-section sitting-padding">
         <div className="container">
           <div className="stats-grid">
             <div className="stat-item">
@@ -586,7 +586,7 @@ export default function ArtOfSitting() {
       </section>
 
       {/* CTA Section */}
-      <section className="cta-section">
+      <section className="cta-section sitting-padding">
         <div className="container">
           <div className="cta-content">
             <h2>Ready for Pain-Free Sitting?</h2>

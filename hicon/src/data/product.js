@@ -4,16 +4,16 @@ export const products = [
   // Office Chairs
   {
     id: 1,
-    name: "Executive Office Chair",
-    category: "office",
+    name: "Vibe Mb revolving chair",
+    category: "Air-series",
     type: "chair",
     image: "/img/chair_1.jpg",
     description: "Ergonomic design with lumbar support for long working hours"
   },
   {
     id: 2,
-    name: "Mesh Office Chair",
-    category: "office",
+    name: "Libra revolving Chair",
+    category: "Air-series",
     type: "chair",
     price: 4499,
     image: "/img/chair_2.jpg",
@@ -21,8 +21,8 @@ export const products = [
   },
   {
     id: 3,
-    name: "Premium Leather Office Chair",
-    category: "office",
+    name: "Scorpio revolving Chair",
+    category: "Air-series",
     type: "chair",
     price: 12999,
     image: "/img/chair_3.jpg",
@@ -32,8 +32,8 @@ export const products = [
   // Gaming Chairs
   {
     id: 4,
-    name: "Gaming Chair Pro",
-    category: "gaming",
+    name: "Panther HB/MB revolving chair",
+    category: "Air-series",
     type: "chair",
     price: 8999,
     image: "/img/chair_4.jpg",
@@ -41,8 +41,8 @@ export const products = [
   },
   {
     id: 5,
-    name: "Racing Style Gaming Chair",
-    category: "gaming",
+    name: "Orion revolving chair",
+    category: "Air-series",
     type: "chair",
     price: 10999,
     image: "/img/chair_5.jpg",
@@ -50,8 +50,8 @@ export const products = [
   },
   {
     id: 6,
-    name: "Professional Esports Chair",
-    category: "gaming",
+    name: "Butterfly Mb revolving chair",
+    category: "Air-series",
     type: "chair",
     price: 15999,
     image: "/img/chair_6.jpg",
@@ -61,8 +61,8 @@ export const products = [
   // Dining Chairs
   {
     id: 7,
-    name: "Modern Dining Chair",
-    category: "dining",
+    name: "Virgo MB revolving chair",
+    category: "Air-series",
     type: "chair",
     price: 2999,
     image: "/img/chair_7.jpg",
@@ -70,28 +70,19 @@ export const products = [
   },
   {
     id: 8,
-    name: "Upholstered Dining Chair",
-    category: "dining",
+    name: "Matrix office chair",
+    category: "office",
     type: "chair",
     price: 3499,
     image: "/img/chair_8.jpg",
     description: "Comfortable padded seat with elegant finish"
   },
-  {
-    id: 9,
-    name: "Classic Wooden Dining Chair",
-    category: "dining",
-    type: "chair",
-    price: 2499,
-    image: "/img/chair_9.jpg",
-    description: "Traditional design with solid wood construction"
-  },
 
   // Outdoor Chairs
   {
     id: 10,
-    name: "Garden Lounge Chair",
-    category: "outdoor",
+    name: "Comet Mb revolving chair",
+    category: "Air-series",
     type: "chair",
     price: 4999,
     image: "/img/chair_10.jpg",
@@ -99,8 +90,8 @@ export const products = [
   },
   {
     id: 11,
-    name: "Patio Rocking Chair",
-    category: "outdoor",
+    name: "revolving chair",
+    category: "Air-series",
     type: "chair",
     price: 5499,
     image: "/img/chair_11.jpg",
@@ -108,484 +99,440 @@ export const products = [
   },
   {
     id: 12,
-    name: "Folding Beach Chair",
-    category: "outdoor",
+    name: "Aura MB revolving chair",
+    category: "Air-series",
     type: "chair",
     price: 1999,
     image: "/img/chair_12.jpg",
-    description: "Portable and lightweight for beach trips"
   },
 
   // Kids Chairs
   {
     id: 13,
-    name: "Colorful Kids Chair",
-    category: "kids",
+    name: "Nova revolving chair",
+    category: "Air-series",
     type: "chair",
     price: 1499,
     image: "/img/chair_13.jpg",
-    description: "Safe and colorful chair for children"
   },
   {
     id: 14,
-    name: "Study Chair for Kids",
-    category: "kids",
+    name: "zig zag revolving chair",
+    category: "Air-series",
     type: "chair",
     price: 2499,
     image: "/img/chair_14.jpg",
-    description: "Adjustable height chair for growing kids"
   },
   {
     id: 15,
-    name: "Cartoon Character Chair",
-    category: "kids",
+    name: "Zorro revolving chair",
+    category: "Air-series",
     type: "chair",
     price: 1799,
     image: "/img/chair_15.jpg",
-    description: "Fun design with favorite cartoon characters"
-  },
- {
-    id: 16,
-    name: "Executive Office Chair",
-    category: "office",
-    type: "chair",
-    image: "/img/chair_16.jpg",
-    description: "Ergonomic design with lumbar support for long working hours"
   },
   {
+    id: 16,
+    name: "Zig-zag grey chair",
+    category: "Air-series",
+    type: "chair",
+    image: "/img/chair_16.jpg",
+  },
+
+  //bar stool series starts here
+  {
     id: 17,
-    name: "Mesh Office Chair",
-    category: "office",
+    name: "HC 2005 bar stool series",
+    category: "Bar-stool-series",
     type: "chair",
     price: 4499,
     image: "/img/chair_17.jpg",
-    description: "Breathable mesh back with adjustable armrests"
   },
   {
     id: 18,
-    name: "Premium Leather Office Chair",
-    category: "office",
+    name: "HC 2008 bar stool series",
+    category: "Bar-stool-series",
     type: "chair",
     price: 12999,
     image: "/img/chair_18.jpg",
-    description: "Luxurious leather upholstery with 360° swivel"
   },
 
-  // Gaming Chairs
   {
     id: 19,
-    name: "Gaming Chair Pro",
-    category: "gaming",
+    name: "HC 2006 bar stool series",
+    category: "Bar-stool-series",
     type: "chair",
     price: 8999,
     image: "/img/chair_19.jpg",
-    description: "High-back gaming chair with RGB lighting"
   },
 
   {
     id: 20,
-    name: "Professional Esports Chair",
-    category: "gaming",
+    name: "HC 2007 bar stool series",
+    category: "Bar-stool-series",
     type: "chair",
     price: 15999,
     image: "/img/chair_21.jpg",
-    description: "Tournament-grade chair with 4D armrests"
   },
 
-  // Dining Chairs
-  
   {
     id: 21,
-    name: "Upholstered Dining Chair",
-    category: "dining",
+    name: "HC 2001 bar stool series",
+    category: "Bar-stool-series",
     type: "chair",
     price: 3499,
     image: "/img/chair_23.jpg",
-    description: "Comfortable padded seat with elegant finish"
   },
   {
     id: 22,
-    name: "Classic Wooden Dining Chair",
-    category: "dining",
+    name: "HC 2002 bar stool series",
+    category: "Bar-stool-series",
     type: "chair",
     price: 2499,
     image: "/img/chair_24.jpg",
-    description: "Traditional design with solid wood construction"
   },
 
-  // Outdoor Chairs
   {
     id: 23,
-    name: "Garden Lounge Chair",
-    category: "outdoor",
+    name: "HC 2004 bar stool series",
+    category: "Bar-stool-series",
     type: "chair",
     price: 4999,
     image: "/img/chair_25.jpg",
-    description: "Weather-resistant material for outdoor use"
   },
+
   {
     id: 24,
-    name: "Patio Rocking Chair",
-    category: "outdoor",
+    name: "HC 2003 bar stool series",
+    category: "Bar-stool-series",
     type: "chair",
     price: 5499,
     image: "/img/chair_26.jpg",
-    description: "Comfortable rocking chair for your patio"
   },
- 
 
-  // Kids Chairs
+
+
+  //Cafeteria Series
 
   {
     id: 25,
-    name: "Study Chair for Kids",
-    category: "kids",
+    name: "Mollis Club",
+    category: "Cafeteria-series",
     type: "chair",
     price: 2499,
     image: "/img/chair_29.jpg",
-    description: "Adjustable height chair for growing kids"
   },
   {
     id: 26,
-    name: "Cartoon Character Chair",
-    category: "kids",
+    name: "Lenka Club",
+    category: "Cafeteria-series",
     type: "chair",
     price: 1799,
     image: "/img/chair_30.jpg",
-    description: "Fun design with favorite cartoon characters"
   },
-// Office Chairs
-{
-  id: 27,
-  name: "Executive Office Chair",
-  category: "office",
-  type: "chair",
-  image: "/img/chair_31.jpg",
-  description: "Ergonomic design with lumbar support for long working hours"
-},
 
-// Gaming Chairs
+  {
+    id: 27,
+    name: "Shark High",
+    category: "Cafeteria-series",
+    type: "chair",
+    image: "/img/chair_31.jpg",
+  },
 
-{
-  id: 28,
-  name: "Racing Style Gaming Chair",
-  category: "gaming",
-  type: "chair",
-  price: 10999,
-  image: "/img/chair_35.jpg",
-  description: "Racing-inspired design with reclining feature"
-},
+  {
+    id: 28,
+    name: "Orbit Club",
+    category: "Cafeteria-series",
+    type: "chair",
+    price: 10999,
+    image: "/img/chair_35.jpg",
+  },
+
+  {
+    id: 29,
+    name: "Shark",
+    category: "Cafeteria-series",
+    type: "chair",
+    price: 2999,
+    image: "/img/chair_37.jpg",
+  },
+
+  //Executive series
+  {
+    id: 30,
+    name: "Classic HB chair",
+    category: "Executive-series",
+    type: "chair",
+    price: 3499,
+    image: "/img/chair_38.jpg",
+  },
+
+  {
+    id: 31,
+    name: "Elite Hb chair",
+    category: "Executive-series",
+    type: "chair",
+    price: 5499,
+    image: "/img/chair_41.jpg",
+  },
+  {
+    id: 32,
+    name: "Oskar Hb chair",
+    category: "Executive-series",
+    type: "chair",
+    price: 1999,
+    image: "/img/chair_42.jpg",
+  },
+
+  {
+    id: 33,
+    name: "ponta Hb chair",
+    category: "Executive-series",
+    type: "chair",
+    price: 1499,
+    image: "/img/chair_43.jpg",
+  },
+  {
+    id: 34,
+    name: "Rion Hb chair",
+    category: "Executive-series",
+    type: "chair",
+    price: 2499,
+    image: "/img/chair_44.jpg",
+  },
+  {
+    id: 35,
+    name: "Zera HB chair",
+    category: "Executive-series",
+    type: "chair",
+    price: 1799,
+    image: "/img/chair_45.jpg",
+  },
+
+  {
+    id: 36,
+    name: "Florida HB chair",
+    category: "Executive-series",
+    type: "chair",
+    image: "/img/chair_46.jpg",
+  },
+  {
+    id: 37,
+    name: "Nappa HB chair",
+    category: "Executive-series",
+    type: "chair",
+    price: 12999,
+    image: "/img/chair_48.jpg",
+  },
+
+  //Premium Series
+  {
+    id: 38,
+    name: "Hexa HB chair",
+    category: "Premium-series",
+    type: "chair",
+    price: 10999,
+    image: "/img/chair_50.jpg",
+  },
+
+  {
+    id: 39,
+    name: "Hexa MB Chair",
+    category: "Premium-series",
+    type: "chair",
+    price: 2999,
+    image: "/img/chair_52.jpg",
+  },
+
+  {
+    id: 40,
+    name: "Flex HB Chair",
+    category: "Premium-series",
+    type: "chair",
+    price: 4999,
+    image: "/img/chair_55.jpg",
+  },
+
+  {
+    id: 41,
+    name: "Vintage HB chair",
+    category: "Premium-series",
+    type: "chair",
+    price: 5499,
+    image: "/img/chair_56.jpg",
+  },
+
+  {
+    id: 42,
+    name: "Amaze chair",
+    category: "Premium-series",
+    type: "chair",
+    price: 1499,
+    image: "/img/chair_58.jpg",
+  },
+
+  {
+    id: 43,
+    name: "Amaze plus HB chair",
+    category: "Premium-series",
+    type: "chair",
+    price: 1799,
+    image: "/img/chair_60.jpg",
+  },
+
+  {
+    id: 44,
+    name: "Jaguar chair",
+    category: "Premium-series",
+    type: "chair",
+    price: 1799,
+    image: "/img/chair_62.jpg",
+  },
+
+  {
+    id: 45,
+    name: "Aspen MB Chair",
+    category: "Premium-series",
+    type: "chair",
+    price: 1799,
+    image: "/img/chair_63.jpg",
+  },
+
+  {
+    id: 46,
+    name: "Motto HB Chair",
+    category: "Premium-series",
+    type: "chair",
+    price: 1799,
+    image: "/img/chair_67.jpg",
+  },
+
+  //visitor series
+  {
+    id: 47,
+    name: "HC 1004 visitor chair",
+    category: "visitor-series",
+    type: "chair",
+    price: 1799,
+    image: "/img/chair_68.jpg",
+  },
+
+  {
+    id: 48,
+    name: "HC 1001 visitor Chair",
+    category: "visitor-series",
+    type: "chair",
+    price: 1799,
+    image: "/img/chair_69.jpg",
+  },
+
+  {
+    id: 49,
+    name: "HC 1002 visitor Chair",
+    category: "visitor-series",
+    type: "chair",
+    price: 1799,
+    image: "/img/chair_71.jpg",
+  },
 
 
-// Dining Chairs
-{
-  id: 29,
-  name: "Modern Dining Chair",
-  category: "dining",
-  type: "chair",
-  price: 2999,
-  image: "/img/chair_37.jpg",
-  description: "Sleek wooden design perfect for dining rooms"
-},
-{
-  id: 30,
-  name: "Upholstered Dining Chair",
-  category: "dining",
-  type: "chair",
-  price: 3499,
-  image: "/img/chair_38.jpg",
-  description: "Comfortable padded seat with elegant finish"
-},
 
-{
-  id: 31,
-  name: "Patio Rocking Chair",
-  category: "outdoor",
-  type: "chair",
-  price: 5499,
-  image: "/img/chair_41.jpg",
-  description: "Comfortable rocking chair for your patio"
-},
-{
-  id: 32,
-  name: "Folding Beach Chair",
-  category: "outdoor",
-  type: "chair",
-  price: 1999,
-  image: "/img/chair_42.jpg",
-  description: "Portable and lightweight for beach trips"
-},
-
-// Kids Chairs
-{
-  id: 33,
-  name: "Colorful Kids Chair",
-  category: "kids",
-  type: "chair",
-  price: 1499,
-  image: "/img/chair_43.jpg",
-  description: "Safe and colorful chair for children"
-},
-{
-  id: 34,
-  name: "Study Chair for Kids",
-  category: "kids",
-  type: "chair",
-  price: 2499,
-  image: "/img/chair_44.jpg",
-  description: "Adjustable height chair for growing kids"
-},
-{
-  id: 35,
-  name: "Cartoon Character Chair",
-  category: "kids",
-  type: "chair",
-  price: 1799,
-  image: "/img/chair_45.jpg",
-  description: "Fun design with favorite cartoon characters"
-},
-
-// Next repeated set 46–60 (same pattern again)
-
-// Office Chairs
-{
-  id: 36,
-  name: "Executive Office Chair",
-  category: "office",
-  type: "chair",
-  image: "/img/chair_46.jpg",
-  description: "Ergonomic design with lumbar support for long working hours"
-},
-{
-  id: 37,
-  name: "Premium Leather Office Chair",
-  category: "office",
-  type: "chair",
-  price: 12999,
-  image: "/img/chair_48.jpg",
-  description: "Luxurious leather upholstery with 360° swivel"
-},
-
-{
-  id: 38,
-  name: "Racing Style Gaming Chair",
-  category: "gaming",
-  type: "chair",
-  price: 10999,
-  image: "/img/chair_50.jpg",
-  description: "Racing-inspired design with reclining feature"
-},
-
-// Dining Chairs
-{
-  id: 39,
-  name: "Modern Dining Chair",
-  category: "dining",
-  type: "chair",
-  price: 2999,
-  image: "/img/chair_52.jpg",
-  description: "Sleek wooden design perfect for dining rooms"
-},
-
-// Outdoor Chairs
-{
-  id: 40,
-  name: "Garden Lounge Chair",
-  category: "outdoor",
-  type: "chair",
-  price: 4999,
-  image: "/img/chair_55.jpg",
-  description: "Weather-resistant material for outdoor use"
-},
-{
-  id: 41,
-  name: "Patio Rocking Chair",
-  category: "outdoor",
-  type: "chair",
-  price: 5499,
-  image: "/img/chair_56.jpg",
-  description: "Comfortable rocking chair for your patio"
-},
-
-
-// Kids Chairs
-{
-  id: 42,
-  name: "Colorful Kids Chair",
-  category: "kids",
-  type: "chair",
-  price: 1499,
-  image: "/img/chair_58.jpg",
-  description: "Safe and colorful chair for children"
-},
-{
-  id: 43,
-  name: "Cartoon Character Chair",
-  category: "kids",
-  type: "chair",
-  price: 1799,
-  image: "/img/chair_60.jpg",
-  description: "Fun design with favorite cartoon characters"
-},
-{
-  id: 44,
-  name: "Cartoon Character Chair",
-  category: "kids",
-  type: "chair",
-  price: 1799,
-  image: "/img/chair_62.jpg",
-  description: "Fun design with favorite cartoon characters"
-},
-{
-  id: 45,
-  name: "Cartoon Character Chair",
-  category: "kids",
-  type: "chair",
-  price: 1799,
-  image: "/img/chair_63.jpg",
-  description: "Fun design with favorite cartoon characters"
-},
-{
-  id: 46,
-  name: "Cartoon Character Chair",
-  category: "kids",
-  type: "chair",
-  price: 1799,
-  image: "/img/chair_67.jpg",
-  description: "Fun design with favorite cartoon characters"
-},
-{
-  id: 47,
-  name: "Cartoon Character Chair",
-  category: "kids",
-  type: "chair",
-  price: 1799,
-  image: "/img/chair_68.jpg",
-  description: "Fun design with favorite cartoon characters"
-},
-{
-  id: 48,
-  name: "Cartoon Character Chair",
-  category: "kids",
-  type: "chair",
-  price: 1799,
-  image: "/img/chair_69.jpg",
-  description: "Fun design with favorite cartoon characters"
-},
-{
-  id: 49,
-  name: "Cartoon Character Chair",
-  category: "kids",
-  type: "chair",
-  price: 1799,
-  image: "/img/chair_71.jpg",
-  description: "Fun design with favorite cartoon characters"
-},
-{
-  id: 50,
-  name: "Cartoon Character Chair",
-  category: "kids",
-  type: "chair",
-  price: 1799,
-  image: "/img/chair_72.jpg",
-  description: "Fun design with favorite cartoon characters"
-},
 
   // Sofas - Living Room
- {
-  id: 51,
-  name: "3-Seater Fabric Sofa",
-  category: "living-room",
-  type: "sofa",
-  image: "/images/sofa-1.jpg",
-  description: "Comfortable 3-seater sofa with premium fabric"
-},
-{
-  id: 52,
-  name: "L-Shape Corner Sofa",
-  category: "living-room",
-  type: "sofa",
-  image: "/images/sofa-2.jpg",
-  description: "Spacious L-shaped sofa perfect for large families"
-},
-{
-  id: 53,
-  name: "Luxury Leather Sofa",
-  category: "living-room",
-  type: "sofa",
-  image: "/images/sofa-3.jpg",
-  description: "Premium leather sofa with elegant design"
-},
-{
-  id: 54,
-  name: "Recliner Sofa Set",
-  category: "living-room",
-  type: "sofa",
-  image: "/images/sofa-4.jpg",
-  description: "Comfortable reclining sofa with footrest"
-},
-{
-  id: 55,
-  name: "Modern Sectional Sofa",
-  category: "living-room",
-  type: "sofa",
-  image: "/images/sofa-5.jpg",
-  description: "Contemporary design with modular sections"
-},
+  {
+    id: 51,
+    name: "3-Seater Fabric Sofa",
+    category: "living-room",
+    type: "sofa",
+    image: "/images/sofa-1.jpg",
+    description: "Comfortable 3-seater sofa with premium fabric"
+  },
+  {
+    id: 52,
+    name: "L-Shape Corner Sofa",
+    category: "living-room",
+    type: "sofa",
+    image: "/images/sofa-2.jpg",
+    description: "Spacious L-shaped sofa perfect for large families"
+  },
+  {
+    id: 53,
+    name: "Luxury Leather Sofa",
+    category: "living-room",
+    type: "sofa",
+    image: "/images/sofa-3.jpg",
+    description: "Premium leather sofa with elegant design"
+  },
+  {
+    id: 54,
+    name: "Recliner Sofa Set",
+    category: "living-room",
+    type: "sofa",
+    image: "/images/sofa-4.jpg",
+    description: "Comfortable reclining sofa with footrest"
+  },
+  {
+    id: 55,
+    name: "Modern Sectional Sofa",
+    category: "living-room",
+    type: "sofa",
+    image: "/images/sofa-5.jpg",
+    description: "Contemporary design with modular sections"
+  },
 
-// Office Sofas
-{
-  id: 56,
-  name: "Office Reception Sofa",
-  category: "office-sofa",
-  type: "sofa",
-  image: "/images/office-sofa-1.jpg",
-  description: "Professional sofa for office reception areas"
-},
-{
-  id: 57,
-  name: "Executive Lounge Sofa",
-  category: "office-sofa",
-  type: "sofa",
-  image: "/images/office-sofa-2.jpg",
-  description: "Luxurious sofa for executive lounges"
-},
+  // Office Sofas
+  {
+    id: 56,
+    name: "Office Reception Sofa",
+    category: "office-sofa",
+    type: "sofa",
+    image: "/images/office-sofa-1.jpg",
+    description: "Professional sofa for office reception areas"
+  },
+  {
+    id: 57,
+    name: "Executive Lounge Sofa",
+    category: "office-sofa",
+    type: "sofa",
+    image: "/images/office-sofa-2.jpg",
+    description: "Luxurious sofa for executive lounges"
+  },
 
-// Outdoor Sofas
-{
-  id: 58,
-  name: "Outdoor Patio Sofa",
-  category: "outdoor-sofa",
-  type: "sofa",
-  image: "/images/outdoor-sofa-1.jpg",
-  description: "Weather-resistant sofa for outdoor spaces"
-},
-{
-  id: 59,
-  name: "Garden Rattan Sofa Set",
-  category: "outdoor-sofa",
-  type: "sofa",
-  image: "/images/outdoor-sofa-2.jpg",
-  description: "Stylish rattan sofa set for your garden"
-},
+  // Outdoor Sofas
+  {
+    id: 58,
+    name: "Outdoor Patio Sofa",
+    category: "outdoor-sofa",
+    type: "sofa",
+    image: "/images/outdoor-sofa-1.jpg",
+    description: "Weather-resistant sofa for outdoor spaces"
+  },
+  {
+    id: 59,
+    name: "Garden Rattan Sofa Set",
+    category: "outdoor-sofa",
+    type: "sofa",
+    image: "/images/outdoor-sofa-2.jpg",
+    description: "Stylish rattan sofa set for your garden"
+  },
 
-// Sofa-Cum-Bed
-{
-  id: 60,
-  name: "Sofa Cum Bed",
-  category: "sofa-cum-bed",
-  type: "sofa",
-  image: "/images/sofa-bed-1.jpg",
-  description: "Multi-functional sofa that converts to bed"
-},
-{
-  id: 61,
-  name: "Sleeper Sofa with Storage",
-  category: "sofa-cum-bed",
-  type: "sofa",
-  image: "/images/sofa-bed-2.jpg",
-  description: "Space-saving sofa bed with storage compartment"
-}
+  // Sofa-Cum-Bed
+  {
+    id: 60,
+    name: "Sofa Cum Bed",
+    category: "sofa-cum-bed",
+    type: "sofa",
+    image: "/images/sofa-bed-1.jpg",
+    description: "Multi-functional sofa that converts to bed"
+  },
+  {
+    id: 61,
+    name: "Sleeper Sofa with Storage",
+    category: "sofa-cum-bed",
+    type: "sofa",
+    image: "/images/sofa-bed-2.jpg",
+    description: "Space-saving sofa bed with storage compartment"
+  }
 
 ];
 

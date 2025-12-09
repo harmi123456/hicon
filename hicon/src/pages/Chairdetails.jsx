@@ -106,58 +106,7 @@ if (!chair) {
             </ul>
           </div>
 
-          {/* Quantity Selector */}
-          <div className="quantity-section">
-            <h3>Quantity</h3>
-            <div className="quantity-controls">
-              <button
-                className="qty-btn"
-                onClick={() => handleQuantityChange('decrease')}
-                disabled={quantity === 1}
-              >
-                -
-              </button>
-              <span className="qty-display">{quantity}</span>
-              <button
-                className="qty-btn"
-                onClick={() => handleQuantityChange('increase')}
-              >
-                +
-              </button>
-            </div>
-          </div>
-
-          {/* Total Price */}
-          <div className="total-price-section">
-            <span>Total Price:</span>
-            <span className="total-price">₹{totalPrice.toLocaleString()}</span>
-          </div>
-
-          {/* Action Buttons */}
-          <div className="action-buttons">
-            <button className="add-to-cart-btn">
-              🛒 Add to Cart
-            </button>
-            <button className="buy-now-btn">
-              ⚡ Buy Now
-            </button>
-          </div>
-
-          {/* Delivery Info */}
-          <div className="delivery-info">
-            <div className="info-item">
-              <span className="icon">🚚</span>
-              <span>Free Delivery on orders above ₹500</span>
-            </div>
-            <div className="info-item">
-              <span className="icon">↩️</span>
-              <span>7 Days Easy Return Policy</span>
-            </div>
-            <div className="info-item">
-              <span className="icon">💳</span>
-              <span>Cash on Delivery Available</span>
-            </div>
-          </div>
+         
         </div>
       </div>
 

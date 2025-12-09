@@ -354,7 +354,7 @@ export default function Index() {
     },
     {
       id: 4,
-      image: 'https://images.unsplash.com/photo-1598300188916-2f5fc49c70fe?w=400&h=600&fit=crop',
+      image: '/img/Scandavian.jpg',
       title: 'Scandinavian',
       style: 'Nordic'
     },
@@ -458,24 +458,22 @@ export default function Index() {
 
   //sec 6
   const row1Items = [
-    { id: 1, title: "Premium Quality", icon: "⭐" },
-    { id: 2, title: "Fast Delivery", icon: "🚀" },
-    { id: 3, title: "Best Price", icon: "💰" },
-    { id: 4, title: "Customer Support", icon: "💬" },
-    { id: 5, title: "Easy Returns", icon: "🔄" },
-    { id: 6, title: "Warranty", icon: "🛡️" },
+    { id: 1, title: "Ergonomic Design", icon: "💺" },
+    { id: 2, title: "Smooth 360° Rotation", icon: "🔄" },
+    { id: 3, title: "Adjustable Height", icon: "📏" },
+    { id: 4, title: "Premium Cushion Comfort", icon: "🛋️" },
+    { id: 5, title: "Breathable Mesh Back", icon: "🌬️" },
+    { id: 6, title: "Durable Build Quality", icon: "🛡️" },
   ];
 
   const row2Items = [
-    { id: 7, title: "Secure Payment", icon: "🔒" },
-    { id: 8, title: "Free Shipping", icon: "📦" },
-    { id: 9, title: "24/7 Service", icon: "⏰" },
-    { id: 10, title: "Verified Products", icon: "✅" },
-    { id: 11, title: "Trusted Brand", icon: "🏆" },
-    { id: 12, title: "Quality Assured", icon: "👍" },
+    { id: 7, title: "Back Support for Long Hours", icon: "🧍‍♂️" },
+    { id: 8, title: "Easy Mobility with Wheels", icon: "🛞" },
+    { id: 9, title: "Noise-Free Movement", icon: "🤫" },
+    { id: 10, title: "Premium Upholstery", icon: "✨" },
+    { id: 11, title: "Stylish Modern Look", icon: "🎨" },
+    { id: 12, title: "Tested for Stability & Balance", icon: "📌" },
   ];
-
-
 
 
   //new code
@@ -485,13 +483,14 @@ export default function Index() {
   const servicesRef = useRef(null);
   const serviceItemsRef = useRef([]);
 
-  const services = [
-    { title: "Architecture Design", description: "Innovative and sustainable architectural solutions" },
-    { title: "Interior Design", description: "Creating beautiful and functional interior spaces" },
-    { title: "Urban Planning", description: "Strategic planning for modern urban development" },
-    { title: "Landscape Design", description: "Harmonizing nature with built environments" },
-    { title: "3D Visualization", description: "Photorealistic renders and virtual tours" },
-  ];
+ const services = [
+  { title: "Custom Chair Design", description: "Tailor-made revolving chairs designed to match comfort and style preferences." },
+  { title: "Office Chair Manufacturing", description: "High-quality ergonomic chairs built with premium materials for long-term durability." },
+  { title: "Bulk Corporate Orders", description: "Special pricing and supply solutions for offices, startups, and institutions." },
+  { title: "Repair & Maintenance", description: "Servicing, part replacement, and upgrades for all types of office chairs." },
+  { title: "Home & Workspace Setup", description: "Consultation and delivery of chairs based on posture, space, and work needs." },
+];
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -507,7 +506,7 @@ export default function Index() {
       // Image split animation
       const maxSplit = 60; // Maximum percentage to move
       const translateX = progress * maxSplit;
-      
+
       if (imageLeftRef.current) {
         imageLeftRef.current.style.transform = `translateX(-${translateX}%)`;
       }
@@ -901,15 +900,15 @@ export default function Index() {
       </div>
 
 
-      
 
-       {/* Sticky Image Section with Split Effect */}
-         <section ref={stickyRef} className="sticky-section">
+
+      {/* Sticky Image Section with Split Effect */}
+      <section ref={stickyRef} className="sticky-section">
         <div className="images-wrapper">
           {/* Left Half of Image */}
           <div ref={imageLeftRef} className="image-half image-left">
-            <img 
-              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&h=1080&fit=crop&q=80" 
+            <img
+              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&h=1080&fit=crop&q=80"
               alt="Architecture"
               className="split-image"
             />
@@ -917,8 +916,8 @@ export default function Index() {
 
           {/* Right Half of Image */}
           <div ref={imageRightRef} className="image-half image-right">
-            <img 
-              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&h=1080&fit=crop&q=80" 
+            <img
+              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&h=1080&fit=crop&q=80"
               alt="Architecture"
               className="split-image"
             />
@@ -929,11 +928,11 @@ export default function Index() {
         <div ref={servicesRef} className="services-overlay">
           <div className="services-container">
             <h2 className="services-title">SERVICES</h2>
-            
+
             <div className="services-list">
               {services.map((service, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="service-item"
                   ref={el => serviceItemsRef.current[index] = el}
                 >
@@ -947,7 +946,7 @@ export default function Index() {
                         <p>{service.description}</p>
                       </div>
                     </div>
-                    
+
                     <div className="service-arrow">
                       <ArrowUpRight color="#fff" size={24} />
                     </div>

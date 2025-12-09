@@ -33,7 +33,7 @@ function App() {
             <Route path="/sofas/:slug" element={<Sofadetails />} />
             <Route path="/art-of-sitting" element={<ArtOfSitting />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/splind" element={<ThreeDCarousel />} />
+            {/* <Route path="/splind" element={<ThreeDCarousel />} /> */}
             <Route path="/model" element={<ModelViewer />} />
           </Routes>
           <Footer />
