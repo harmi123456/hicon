@@ -50,12 +50,11 @@ export default function Index() {
   const sliderRef = useRef(null);
 
   const products = [
-    { id: 1, name: 'Executive Chair', image: 'https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=400&h=400&fit=crop' },
-    { id: 2, name: 'Gaming Chair', image: 'https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=400&h=400&fit=crop' },
-    { id: 3, name: 'Office Chair', image: 'https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?w=400&h=400&fit=crop' },
-    { id: 4, name: 'Ergonomic Chair', image: 'https://images.unsplash.com/photo-1592078615290-033ee584e267?w=400&h=400&fit=crop' },
-    { id: 5, name: 'Mesh Chair', image: 'https://images.unsplash.com/photo-1611269154421-4e27233ac5c7?w=400&h=400&fit=crop' },
-    { id: 6, name: 'Leather Chair', image: 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=400&h=400&fit=crop' },
+    { id: 5, name: 'Premium Chair', image: '/img/chair_57.jpg' },
+    { id: 1, name: 'Executive Chair', image: '/img/chair_40.jpg' },
+    { id: 2, name: 'Office Chair', image: '/img/chair_16.jpg' },
+    { id: 3, name: 'Bar stool', image: '/img/chair_37.jpg' },
+    { id: 4, name: 'Cafeteria Chair', image: '/img/chair_29.jpg' },
   ];
 
   const infiniteProducts = [...products, ...products, ...products];
@@ -72,37 +71,18 @@ export default function Index() {
   };
 
   const handleNext = () => {
-    const nextIndex = currentIndex + 1;
-    setCurrentIndex(nextIndex);
-    scrollToIndex(nextIndex);
+    if (currentIndex < infiniteProducts.length - 1) {
+      const nextIndex = currentIndex + 1;
+      setCurrentIndex(nextIndex);
+      scrollToIndex(nextIndex);
+    }
   };
 
   const handlePrev = () => {
-    const prevIndex = currentIndex - 1;
-    setCurrentIndex(prevIndex);
-    scrollToIndex(prevIndex);
-  };
-
-  const handleScroll = () => {
-    if (sliderRef.current) {
-      const cardWidth = 304;
-      const scrollLeft = sliderRef.current.scrollLeft;
-      const calculatedIndex = Math.round(scrollLeft / cardWidth);
-
-      // Check if we need to loop
-      if (calculatedIndex >= totalProducts * 2) {
-        // Near end, jump to beginning set
-        const newIndex = calculatedIndex - totalProducts;
-        setCurrentIndex(newIndex);
-        setTimeout(() => scrollToIndex(newIndex, false), 50);
-      } else if (calculatedIndex < totalProducts) {
-        // Near beginning, jump to middle set
-        if (scrollLeft < cardWidth * (totalProducts - 1)) {
-          const newIndex = calculatedIndex + totalProducts;
-          setCurrentIndex(newIndex);
-          setTimeout(() => scrollToIndex(newIndex, false), 50);
-        }
-      }
+    if (currentIndex > 0) {
+      const prevIndex = currentIndex - 1;
+      setCurrentIndex(prevIndex);
+      scrollToIndex(prevIndex);
     }
   };
 
@@ -113,9 +93,6 @@ export default function Index() {
       const initialIndex = totalProducts;
       setCurrentIndex(initialIndex);
       scrollToIndex(initialIndex, false);
-
-      slider.addEventListener('scroll', handleScroll);
-      return () => slider.removeEventListener('scroll', handleScroll);
     }
   }, []);
 
@@ -135,15 +112,11 @@ export default function Index() {
 
   const chairCategories = [
     "Executive Chairs",
-    "Ergonomic Solutions",
-    "Executive Chairs",
-    "Gaming Comfort",
-    "Executive Chairs",
+    "Premium series",
+    "Cafeteria series",
+    "Bar stools",
     "Office Essentials",
-    "Executive Chairs",
-    "Mesh Technology",
-    "Executive Chairs",
-    "Leather Luxury"
+    "Comfort Redefined",
   ];
 
   const chars = "!<>-_\\/[]{}—=+*^?#________";
@@ -337,38 +310,38 @@ export default function Index() {
   const chairs = [
     {
       id: 1,
-      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&h=600&fit=crop',
-      title: 'Modern Minimalist',
-      style: 'Contemporary'
+      image: '/img/chair_55.jpg',
+      title: 'Premium Chair',
+      style: 'Luxury Comfort'
     },
     {
       id: 2,
-      image: 'https://images.unsplash.com/photo-1519947486511-46149fa0a254?w=400&h=600&fit=crop',
-      title: 'Luxury Velvet',
-      style: 'Elegant'
+      image: '/img/chair_58.jpg',
+      title: 'Executive Chair',
+      style: 'Professional Series'
     },
     {
       id: 3,
-      image: 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=400&h=600&fit=crop',
-      title: 'Industrial Edge',
-      style: 'Urban'
+      image: '/img/chair_11.jpg',
+      title: 'Air Series Chair',
+      style: 'Breathable Mesh'
     },
     {
       id: 4,
-      image: '/img/Scandavian.jpg',
-      title: 'Scandinavian',
-      style: 'Nordic'
+      image: '/img/chair_24.jpg',
+      title: 'Bar Stool',
+      style: 'Modern High Seating'
     },
     {
       id: 5,
-      image: 'https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=400&h=600&fit=crop',
-      title: 'Classic Heritage',
-      style: 'Timeless'
+      image: '/img/chair_35.jpg',
+      title: 'Cafeteria Chair',
+      style: 'Commercial Comfort'
     }
   ];
 
-  const isAnyHovered = hoveredIndex !== null;
 
+  const isAnyHovered = hoveredIndex !== null;
 
 
 
@@ -646,6 +619,8 @@ export default function Index() {
           </div>
         </div>
 
+
+
       </section>
 
 
@@ -795,14 +770,14 @@ export default function Index() {
 
               <div className="main-heading">
                 <p className="description">
-                  To lead in ergonomic seating and comfort innovation—you need vision, craftsmanship, and engineering precision.
-                  <span className="highlight"> Hicon Seating Solutions™</span> is your trusted partner in premium revolving chairs.
+                  To lead in ergonomic seating and comfort innovation - you need vision, craftsmanship, and engineering precision.
+                  <span className="highlight">Hicon Seating Solutions®</span> is your trusted partner in premium revolving chairs.
                   <span className="highlight"> ComfortVault 360™</span> is your global collection of luxury ergonomic designs.
                 </p>
               </div>
 
               <div className="button-container">
-                <button className="signup-btn">
+                <button className="signup-btn" onClick={() => navigate("/chair")}>
                   <span className="btn-text">Explore Collection</span>
                   <span className="arrow">→</span>
                 </button>
@@ -912,8 +887,6 @@ export default function Index() {
           </div>
         </div>
       </div>
-
-
 
 
       {/* Sticky Image Section with Split Effect */}

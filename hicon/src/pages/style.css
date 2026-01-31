@@ -222,7 +222,7 @@
 
   .product-image-wrapper {
     background-color: #f3f4f6;
-    border-radius: 1.5rem;
+    border-radius: 0 0 1.5rem 1.5rem;
     padding: 2rem;
     margin-bottom: 1rem;
     aspect-ratio: 1 / 1;
@@ -808,7 +808,7 @@
   }
 
   .accordion-item:hover .accordion-image {
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
   }
 
   .dark-overlay {
@@ -2915,7 +2915,7 @@
 
 .product-image {
   width: 100%;
-  height: 280px;
+  height: 280px !important;
   overflow: hidden;
 }
 
