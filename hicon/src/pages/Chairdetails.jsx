@@ -105,8 +105,6 @@ if (!chair) {
               <li>✓ 1 Year warranty</li>
             </ul>
           </div>
-
-         
         </div>
       </div>
 

@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="footer-content">
               {/* Left - Copyright */}
               <div className="footer-copyright">
-                © 2024 Premium Chairs. All rights reserved.
+                © 2026 Premium Chairs. All rights reserved.
               </div>
 
               {/* Center - Links */}

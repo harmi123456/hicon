@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { ChevronLeft, ChevronRight, Sparkles, Coffee, Zap, Heart, Brain, Moon, Award, Shield, Star } from 'lucide-react';
 import { ArrowUpRight } from 'lucide-react';
+import { useNavigate } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -374,6 +375,9 @@ export default function Index() {
   //sec1 slider
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  const navigate = useNavigate();
+
+
   const slides = [
     {
       image: '/img/banner5.jpg',
@@ -460,10 +464,11 @@ export default function Index() {
   const row1Items = [
     { id: 1, title: "Ergonomic Design", icon: "💺" },
     { id: 2, title: "Smooth 360° Rotation", icon: "🔄" },
-    { id: 3, title: "Adjustable Height", icon: "📏" },
+    { id: 3, title: "Adjustable Height", icon: "📏", img: "" },
     { id: 4, title: "Premium Cushion Comfort", icon: "🛋️" },
     { id: 5, title: "Breathable Mesh Back", icon: "🌬️" },
     { id: 6, title: "Durable Build Quality", icon: "🛡️" },
+    { id: 7, title: "Premium Quality Mechanism", icon: "🛡️" },
   ];
 
   const row2Items = [
@@ -483,13 +488,13 @@ export default function Index() {
   const servicesRef = useRef(null);
   const serviceItemsRef = useRef([]);
 
- const services = [
-  { title: "Custom Chair Design", description: "Tailor-made revolving chairs designed to match comfort and style preferences." },
-  { title: "Office Chair Manufacturing", description: "High-quality ergonomic chairs built with premium materials for long-term durability." },
-  { title: "Bulk Corporate Orders", description: "Special pricing and supply solutions for offices, startups, and institutions." },
-  { title: "Repair & Maintenance", description: "Servicing, part replacement, and upgrades for all types of office chairs." },
-  { title: "Home & Workspace Setup", description: "Consultation and delivery of chairs based on posture, space, and work needs." },
-];
+  const services = [
+    { title: "Custom Chair Design", description: "Tailor-made revolving chairs designed to match comfort and style preferences." },
+    { title: "Office Chair Manufacturing", description: "High-quality ergonomic chairs built with premium materials for long-term durability." },
+    { title: "Bulk Corporate Orders", description: "Special pricing and supply solutions for offices, startups, and institutions." },
+    { title: "Repair & Maintenance", description: "Servicing, part replacement, and upgrades for all types of office chairs." },
+    { title: "Home & Workspace Setup", description: "Consultation and delivery of chairs based on posture, space, and work needs." },
+  ];
 
 
   useEffect(() => {
@@ -573,7 +578,10 @@ export default function Index() {
                 <p className="description">{slide.description}</p>
 
                 <div className="button-container">
-                  <button className="signup-btn">
+                  <button
+                    className="signup-btn"
+                    onClick={() => navigate("/chair")}
+                  >
                     <span className="btn-text">Explore More</span>
                     <span className="arrow">→</span>
                   </button>
@@ -639,6 +647,8 @@ export default function Index() {
         </div>
 
       </section>
+
+
       <section className="sec3">
         <div className="mood-slider-container">
           <div className="container">
@@ -757,6 +767,8 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+
       <section className="sec4">
         <div className="cinematic-section">
           <div className="background-gradient" />
@@ -768,7 +780,7 @@ export default function Index() {
               <div className="trust-badge">
                 <div className="trust-label">TRUSTED BY:</div>
                 <div className="trust-number">
-                  <span className="number-big">3</span>
+                  <span className="number-big">10</span>
                   <span className="number-small">k+</span>
                 </div>
                 <div className="trust-users">USERS</div>
@@ -891,10 +903,12 @@ export default function Index() {
         <span className="discount">21% OFF</span>
       </div> */}
 
-            <button className="shop-now-btn">
+            {/* <button className="shop-now-btn">
               Shop Now
               <span className="arrow">→</span>
-            </button>
+            </button> */}
+
+
           </div>
         </div>
       </div>

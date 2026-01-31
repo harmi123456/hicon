@@ -62,6 +62,7 @@ function Chair() {
               <img src={chair.image} alt={chair.name} />
             </div>
             <h3>{chair.name}</h3>
+            <p className="description">{chair.category}</p>
             <p className="description">{chair.description}</p>
             <button className="buy-btn">View Details</button>
           </div>

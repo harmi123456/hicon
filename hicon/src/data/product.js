@@ -70,8 +70,8 @@ export const products = [
   },
   {
     id: 8,
-    name: "Matrix office chair",
-    category: "office",
+    name: "Matrix HB office chair",
+    category: "Air-series",
     type: "chair",
     price: 3499,
     image: "/img/chair_8.jpg",
@@ -81,7 +81,7 @@ export const products = [
   // Outdoor Chairs
   {
     id: 10,
-    name: "Comet Mb revolving chair",
+    name: "Comet revolving chair",
     category: "Air-series",
     type: "chair",
     price: 4999,
@@ -90,7 +90,7 @@ export const products = [
   },
   {
     id: 11,
-    name: "revolving chair",
+    name: "Zen revolving chair",
     category: "Air-series",
     type: "chair",
     price: 5499,

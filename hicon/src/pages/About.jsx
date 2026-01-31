@@ -18,7 +18,7 @@ export default function About() {
               have steadily grown into a trusted brand serving clients across India.
             </p>
             <p>
-              Our manufacturing unit is located at <strong>Gondal Road, Rajkot - 360003</strong>. We take pride in crafting durable and stylish seating solutions for homes,
+              Our manufacturing unit is located at <strong>Gondal HighWay,Opposite Premvati, Rajkot - 360004</strong>. We take pride in crafting durable and stylish seating solutions for homes,
               offices, and commercial spaces.
             </p>
             <p>
@@ -88,7 +88,7 @@ export default function About() {
             </p>
             <p className="glass-text">
               We design and build <span className="glow">ergonomic</span> and <span className="glow">aesthetic</span> seating solutions
-              that redefine comfort for homes, offices, and commercial spaces across India.
+              that redefine comfort for offices, and commercial spaces across India.
             </p>
             <p className="glass-text">
               Serving thousands of <strong>happy customers</strong> and <strong>renowned corporate clients</strong> nationwide.
