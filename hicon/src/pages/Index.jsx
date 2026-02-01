@@ -483,6 +483,7 @@ export default function Index() {
 
       // Image split animation
       const maxSplit = 60; // Maximum percentage to move
+
       const translateX = progress * maxSplit;
 
       if (imageLeftRef.current) {
@@ -904,7 +905,7 @@ export default function Index() {
           {/* Right Half of Image */}
           <div ref={imageRightRef} className="image-half image-right">
             <img
-            src='/img/background.png'
+              src='/img/background.png'
               // src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&h=1080&fit=crop&q=80"
               alt="Architecture"
               className="split-image"
