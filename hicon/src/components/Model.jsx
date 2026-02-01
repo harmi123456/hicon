@@ -3,7 +3,7 @@ import { OrbitControls, useGLTF } from "@react-three/drei";
 import { useRef } from "react";
 
 function ChairModel() {
-  const { scene } = useGLTF("/img/model.glb");
+  const { scene } = useGLTF("/img/model1.glb");
   const ref = useRef();
 
   // 🔹 Gentle rotation + subtle breathing animation
