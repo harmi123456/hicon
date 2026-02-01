@@ -24,14 +24,14 @@ export default function ModelViewer() {
   return (
     <div
       style={{
-        height: "550px",
+        height: "600px",
         margin: 0,
         padding: 0,
         overflow: "hidden",
       }}
     >
       <Canvas
-        style={{ height: "550px", width: "100%", display: "block" }}
+        style={{ height: "600px", width: "auto", display: "block" }}
         camera={{ position: [0, 1.2, 8], fov: 45 }} // a bit higher & farther for perfect framing
       >
         <color attach="background" args={["#f5f5f5"]} />
