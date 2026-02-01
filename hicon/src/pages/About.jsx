@@ -65,14 +65,15 @@ export default function About() {
 
       <div className="map">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59087.43241039646!2d70.75918437236918!3d22.241424710354128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca132efcf311%3A0xf1cb91bf6086404b!2sHicon%20Chair%20Manufacturer!5e0!3m2!1sen!2sin!4v1762967663640!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8237.847979816783!2d70.79093021597099!3d22.242574559614887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca132efcf311%3A0xf1cb91bf6086404b!2sHicon%20Chair%20Manufacturer!5e0!3m2!1sen!2sus!4v1769945531175!5m2!1sen!2sus"
           width="600"
           height="450"
           style={{ border: 0 }}
-          allowFullScreen=""
+          allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
+          title="Hicon Chair Location"
+        />
       </div>
 
       <div className="comfura-section">

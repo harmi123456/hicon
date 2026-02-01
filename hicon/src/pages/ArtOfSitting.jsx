@@ -592,7 +592,7 @@ export default function ArtOfSitting() {
             <h2>Ready for Pain-Free Sitting?</h2>
             <p>Explore our collection of ergonomic chairs designed for ultimate comfort</p>
             <button className="cta-button" onClick={() => navigate("/chair")}>
-              Shop Ergonomic Chairs
+              Explore our Ergonomic Chairs
               <span className="arrow">→</span>
             </button>
           </div>

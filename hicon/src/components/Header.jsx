@@ -131,9 +131,9 @@ export default function Header() {
           <Link to="/art-of-sitting" className="nav-link" onClick={closeMobileMenu}>
             <span>Art of Sitting</span>
           </Link>
-          <Link to="/contact" className="nav-link" onClick={closeMobileMenu}>
+          {/* <Link to="/contact" className="nav-link" onClick={closeMobileMenu}>
             <span>Contact</span>
-          </Link>
+          </Link> */}
           {/* <Link to="/splind" className="nav-link" onClick={closeMobileMenu}>
             <span>Splind</span>
           </Link> */}

@@ -1,11 +1,14 @@
 import React, { useEffect } from 'react'
 import {  ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Shop() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const Navigate = useNavigate();
 
   return (
     <div className="shop-wrapper">
@@ -34,7 +37,7 @@ export default function Shop() {
             <p className="section-description">
               Explore our exquisite range of chairs crafted with precision and designed for ultimate comfort. From modern minimalist to classic elegance, find the perfect piece for your space.
             </p>
-            <button className="cta-button">
+            <button className="cta-button" onClick={() => Navigate("/chair")}>
               View Chairs
               <ArrowRight size={20} />
             </button>
@@ -50,7 +53,7 @@ export default function Shop() {
             <p className="section-description">
               Discover our premium sofa collection where luxury meets functionality. Each piece is thoughtfully designed to be the centerpiece of your living room, offering unmatched comfort and timeless appeal.
             </p>
-            <button className="cta-button">
+            <button className="cta-button" onClick={() => Navigate("/sofa")}>
               View Sofas
               <ArrowRight size={20} />
             </button>

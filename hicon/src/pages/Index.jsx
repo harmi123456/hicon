@@ -50,11 +50,11 @@ export default function Index() {
   const sliderRef = useRef(null);
 
   const products = [
-    { id: 5, name: 'Premium Chair', image: '/img/chair_57.jpg' },
-    { id: 1, name: 'Executive Chair', image: '/img/chair_40.jpg' },
-    { id: 2, name: 'Office Chair', image: '/img/chair_16.jpg' },
-    { id: 3, name: 'Bar stool', image: '/img/chair_37.jpg' },
-    { id: 4, name: 'Cafeteria Chair', image: '/img/chair_29.jpg' },
+    { id: 1, name: 'Premium Chair', image: '/img/chair_57.jpg' },
+    { id: 2, name: 'Executive Chair', image: '/img/chair_40.jpg' },
+    { id: 3, name: 'Office Chair', image: '/img/chair_16.jpg' },
+    { id: 4, name: 'Bar stool', image: '/img/chair_37.jpg' },
+    { id: 5, name: 'Cafeteria Chair', image: '/img/chair_29.jpg' },
   ];
 
   const infiniteProducts = [...products, ...products, ...products];
@@ -437,7 +437,7 @@ export default function Index() {
   const row1Items = [
     { id: 1, title: "Ergonomic Design", icon: "💺" },
     { id: 2, title: "Smooth 360° Rotation", icon: "🔄" },
-    { id: 3, title: "Adjustable Height", icon: "📏", img: "" },
+    { id: 3, title: "Adjustable Height", img: "/img/height.png" },
     { id: 4, title: "Premium Cushion Comfort", icon: "🛋️" },
     { id: 5, title: "Breathable Mesh Back", icon: "🌬️" },
     { id: 6, title: "Durable Build Quality", icon: "🛡️" },
@@ -447,7 +447,7 @@ export default function Index() {
   const row2Items = [
     { id: 7, title: "Back Support for Long Hours", icon: "🧍‍♂️" },
     { id: 8, title: "Easy Mobility with Wheels", icon: "🛞" },
-    { id: 9, title: "Noise-Free Movement", icon: "🤫" },
+    { id: 9, title: "Noise-Free Movement", img: "/img/mute.png" },
     { id: 10, title: "Premium Upholstery", icon: "✨" },
     { id: 11, title: "Stylish Modern Look", icon: "🎨" },
     { id: 12, title: "Tested for Stability & Balance", icon: "📌" },
@@ -895,7 +895,7 @@ export default function Index() {
           {/* Left Half of Image */}
           <div ref={imageLeftRef} className="image-half image-left">
             <img
-              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&h=1080&fit=crop&q=80"
+              src="/img/background.png"
               alt="Architecture"
               className="split-image"
             />
@@ -904,7 +904,8 @@ export default function Index() {
           {/* Right Half of Image */}
           <div ref={imageRightRef} className="image-half image-right">
             <img
-              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&h=1080&fit=crop&q=80"
+            src='/img/background.png'
+              // src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&h=1080&fit=crop&q=80"
               alt="Architecture"
               className="split-image"
             />
@@ -979,10 +980,19 @@ export default function Index() {
             <div className="slider-track">
               {[...row1Items, ...row1Items].map((item, index) => (
                 <div key={`row1-${index}`} className="slider-item">
-                  <div className="item-icon">{item.icon}</div>
+
+                  <div className="item-icon">
+                    {item.icon ? (
+                      <span className="icon-text">{item.icon}</span>
+                    ) : (
+                      <img src={item.img} alt={item.title} />
+                    )}
+                  </div>
+
                   <div className="item-title">{item.title}</div>
                 </div>
               ))}
+
             </div>
           </div>
 
@@ -991,7 +1001,15 @@ export default function Index() {
             <div className="slider-track">
               {[...row2Items, ...row2Items].map((item, index) => (
                 <div key={`row2-${index}`} className="slider-item">
-                  <div className="item-icon">{item.icon}</div>
+
+                  <div className="item-icon">
+                    {item.icon ? (
+                      <span className="icon-text">{item.icon}</span>
+                    ) : (
+                      <img src={item.img} alt={item.title} />
+                    )}
+                  </div>
+
                   <div className="item-title">{item.title}</div>
                 </div>
               ))}
