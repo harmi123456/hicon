@@ -946,33 +946,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* <section className="sec5">
-
-        <div id="comparison-container">
-          <div id="comparison-wrapper">
-            <div id="comparison-card">
-              <div className="decorative-circle circle-left"></div>
-              <div className="decorative-circle circle-right"></div>
-
-              <div id="comparison-content">
-                <div id="chair-section">
-                  <img
-                    id="chair-image"
-                    src="https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=600&h=600&fit=crop"
-                    alt="Ranger HB Chair"
-                  />
-                </div>
-
-                <div id="badge-section">
-                  <div className="bestseller-badge">BESTSELLER 2023</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section> */}
-
       <section className="sec6">
         <div id="slider-container">
           {/* Row 1: Left to Right */}

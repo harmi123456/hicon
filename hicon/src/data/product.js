@@ -4,12 +4,11 @@ export const products = [
   // Office Chairs
   {
     id: 1,
-    name: "Vibe Mb revolving chair",
+    name: "Vibe Mb/Hb revolving chair",
     category: "Air-series",
     type: "chair",
     image: "/img/chair_1.jpg",
-    description: "Ergonomic design with lumbar support for long working hours"
-  },
+ },
   {
     id: 2,
     name: "Libra revolving Chair",
@@ -17,7 +16,6 @@ export const products = [
     type: "chair",
     price: 4499,
     image: "/img/chair_2.jpg",
-    description: "Breathable mesh back with adjustable armrests"
   },
   {
     id: 3,
@@ -26,7 +24,6 @@ export const products = [
     type: "chair",
     price: 12999,
     image: "/img/chair_3.jpg",
-    description: "Luxurious leather upholstery with 360° swivel"
   },
 
   // Gaming Chairs
@@ -37,7 +34,6 @@ export const products = [
     type: "chair",
     price: 8999,
     image: "/img/chair_4.jpg",
-    description: "High-back gaming chair with RGB lighting"
   },
   {
     id: 5,
@@ -46,16 +42,14 @@ export const products = [
     type: "chair",
     price: 10999,
     image: "/img/chair_5.jpg",
-    description: "Racing-inspired design with reclining feature"
   },
   {
     id: 6,
-    name: "Butterfly Mb revolving chair",
+    name: "Butterfly Mb/Hb revolving chair",
     category: "Air-series",
     type: "chair",
     price: 15999,
     image: "/img/chair_6.jpg",
-    description: "Tournament-grade chair with 4D armrests"
   },
 
   // Dining Chairs
@@ -66,7 +60,6 @@ export const products = [
     type: "chair",
     price: 2999,
     image: "/img/chair_7.jpg",
-    description: "Sleek wooden design perfect for dining rooms"
   },
   {
     id: 8,
@@ -75,7 +68,6 @@ export const products = [
     type: "chair",
     price: 3499,
     image: "/img/chair_8.jpg",
-    description: "Comfortable padded seat with elegant finish"
   },
 
   // Outdoor Chairs
@@ -86,7 +78,6 @@ export const products = [
     type: "chair",
     price: 4999,
     image: "/img/chair_10.jpg",
-    description: "Weather-resistant material for outdoor use"
   },
   {
     id: 11,
@@ -95,7 +86,6 @@ export const products = [
     type: "chair",
     price: 5499,
     image: "/img/chair_11.jpg",
-    description: "Comfortable rocking chair for your patio"
   },
   {
     id: 12,
@@ -117,7 +107,7 @@ export const products = [
   },
   {
     id: 14,
-    name: "zig zag revolving chair",
+    name: "Zig zag revolving chair",
     category: "Air-series",
     type: "chair",
     price: 2499,
@@ -142,7 +132,7 @@ export const products = [
   //bar stool series starts here
   {
     id: 17,
-    name: "HC 2005 bar stool series",
+    name: "HC 2005 bar stool",
     category: "Bar-stool-series",
     type: "chair",
     price: 4499,
@@ -150,7 +140,7 @@ export const products = [
   },
   {
     id: 18,
-    name: "HC 2008 bar stool series",
+    name: "HC 2008 bar stool",
     category: "Bar-stool-series",
     type: "chair",
     price: 12999,
@@ -159,7 +149,7 @@ export const products = [
 
   {
     id: 19,
-    name: "HC 2006 bar stool series",
+    name: "HC 2006 bar stool",
     category: "Bar-stool-series",
     type: "chair",
     price: 8999,
@@ -168,7 +158,7 @@ export const products = [
 
   {
     id: 20,
-    name: "HC 2007 bar stool series",
+    name: "HC 2007 bar stool",
     category: "Bar-stool-series",
     type: "chair",
     price: 15999,
@@ -177,7 +167,7 @@ export const products = [
 
   {
     id: 21,
-    name: "HC 2001 bar stool series",
+    name: "HC 2001 bar stool",
     category: "Bar-stool-series",
     type: "chair",
     price: 3499,
@@ -185,7 +175,7 @@ export const products = [
   },
   {
     id: 22,
-    name: "HC 2002 bar stool series",
+    name: "HC 2002 bar stool",
     category: "Bar-stool-series",
     type: "chair",
     price: 2499,
@@ -194,7 +184,7 @@ export const products = [
 
   {
     id: 23,
-    name: "HC 2004 bar stool series",
+    name: "HC 2004 bar stool",
     category: "Bar-stool-series",
     type: "chair",
     price: 4999,
@@ -203,7 +193,7 @@ export const products = [
 
   {
     id: 24,
-    name: "HC 2003 bar stool series",
+    name: "HC 2003 bar stool",
     category: "Bar-stool-series",
     type: "chair",
     price: 5499,
@@ -260,7 +250,7 @@ export const products = [
   //Executive series
   {
     id: 30,
-    name: "Classic HB chair",
+    name: "Classic HB",
     category: "Executive-series",
     type: "chair",
     price: 3499,
@@ -269,7 +259,7 @@ export const products = [
 
   {
     id: 31,
-    name: "Elite Hb chair",
+    name: "Elite Hb",
     category: "Executive-series",
     type: "chair",
     price: 5499,
@@ -277,7 +267,7 @@ export const products = [
   },
   {
     id: 32,
-    name: "Oskar Hb chair",
+    name: "Oskar Hb",
     category: "Executive-series",
     type: "chair",
     price: 1999,
@@ -286,7 +276,7 @@ export const products = [
 
   {
     id: 33,
-    name: "ponta Hb chair",
+    name: "ponta Hb ",
     category: "Executive-series",
     type: "chair",
     price: 1499,
@@ -294,7 +284,7 @@ export const products = [
   },
   {
     id: 34,
-    name: "Rion Hb chair",
+    name: "Rion Hb",
     category: "Executive-series",
     type: "chair",
     price: 2499,
@@ -302,7 +292,7 @@ export const products = [
   },
   {
     id: 35,
-    name: "Zera HB chair",
+    name: "Zera HB",
     category: "Executive-series",
     type: "chair",
     price: 1799,
@@ -311,14 +301,14 @@ export const products = [
 
   {
     id: 36,
-    name: "Florida HB chair",
+    name: "Florida HB",
     category: "Executive-series",
     type: "chair",
     image: "/img/chair_46.jpg",
   },
   {
     id: 37,
-    name: "Nappa HB chair",
+    name: "Nappa HB",
     category: "Executive-series",
     type: "chair",
     price: 12999,
@@ -328,7 +318,7 @@ export const products = [
   //Premium Series
   {
     id: 38,
-    name: "Hexa HB chair",
+    name: "Hexa HB",
     category: "Premium-series",
     type: "chair",
     price: 10999,
@@ -337,7 +327,7 @@ export const products = [
 
   {
     id: 39,
-    name: "Hexa MB Chair",
+    name: "Hexa MB",
     category: "Premium-series",
     type: "chair",
     price: 2999,
@@ -346,7 +336,7 @@ export const products = [
 
   {
     id: 40,
-    name: "Flex HB Chair",
+    name: "Flex HB",
     category: "Premium-series",
     type: "chair",
     price: 4999,
@@ -355,7 +345,7 @@ export const products = [
 
   {
     id: 41,
-    name: "Vintage HB chair",
+    name: "Vintage HB",
     category: "Premium-series",
     type: "chair",
     price: 5499,
@@ -364,7 +354,7 @@ export const products = [
 
   {
     id: 42,
-    name: "Amaze chair",
+    name: "Amaze HB",
     category: "Premium-series",
     type: "chair",
     price: 1499,
@@ -373,7 +363,7 @@ export const products = [
 
   {
     id: 43,
-    name: "Amaze plus HB chair",
+    name: "Amaze plus HB",
     category: "Premium-series",
     type: "chair",
     price: 1799,
@@ -391,7 +381,7 @@ export const products = [
 
   {
     id: 45,
-    name: "Aspen MB Chair",
+    name: "Aspen MB ",
     category: "Premium-series",
     type: "chair",
     price: 1799,
@@ -400,7 +390,7 @@ export const products = [
 
   {
     id: 46,
-    name: "Motto HB Chair",
+    name: "Motto HB ",
     category: "Premium-series",
     type: "chair",
     price: 1799,
@@ -537,8 +527,8 @@ export const products = [
 ];
 
 export const categories = {
-  chairs: ["office", "gaming", "dining", "outdoor", "kids"],
+  chairs: ["Premium-series", "Executive-series", "Air-series", "Bar-stool-series", "Cafeteria-series", "visitor-series"],
   sofas: ["living-room", "office-sofa", "outdoor-sofa", "sofa-cum-bed"]
 };
 
-export const allCategories = ["office", "gaming", "dining", "outdoor", "kids", "living-room", "office-sofa", "outdoor-sofa", "sofa-cum-bed"];
+export const allCategories = ["Premium-series", "Air-series", "Bar-stool-series", "Cafeteria-series", "Executive-series", "visitor-series", "living-room", "office-sofa", "outdoor-sofa", "sofa-cum-bed"];
