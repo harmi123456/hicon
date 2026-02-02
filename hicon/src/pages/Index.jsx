@@ -50,11 +50,11 @@ export default function Index() {
   const sliderRef = useRef(null);
 
   const products = [
-    { id: 1, name: 'Premium Chair', image: '/img/chair_57.jpg' },
-    { id: 2, name: 'Executive Chair', image: '/img/chair_40.jpg' },
-    { id: 3, name: 'Office Chair', image: '/img/chair_16.jpg' },
-    { id: 4, name: 'Bar stool', image: '/img/chair_37.jpg' },
-    { id: 5, name: 'Cafeteria Chair', image: '/img/chair_29.jpg' },
+    { id: 1, name: 'Premium Chair', image: '/img/chair_57.jpg', loading: 'lazy' },
+    { id: 2, name: 'Executive Chair', image: '/img/chair_40.jpg', loading: 'lazy' },
+    { id: 3, name: 'Office Chair', image: '/img/chair_16.jpg', loading: 'lazy' },
+    { id: 4, name: 'Bar stool', image: '/img/chair_37.jpg', loading: 'lazy' },
+    { id: 5, name: 'Cafeteria Chair', image: '/img/chair_29.jpg', loading: 'lazy' },
   ];
 
   const infiniteProducts = [...products, ...products, ...products];
@@ -311,30 +311,35 @@ export default function Index() {
     {
       id: 1,
       image: '/img/chair_55.jpg',
+      loading: 'lazy',
       title: 'Premium Chair',
       style: 'Luxury Comfort'
     },
     {
       id: 2,
       image: '/img/chair_58.jpg',
+      loading: 'lazy',
       title: 'Executive Chair',
       style: 'Professional Series'
     },
     {
       id: 3,
       image: '/img/chair_11.jpg',
+      loading: 'lazy',
       title: 'Air Series Chair',
       style: 'Breathable Mesh'
     },
     {
       id: 4,
       image: '/img/chair_24.jpg',
+      loading: 'lazy',
       title: 'Bar Stool',
       style: 'Modern High Seating'
     },
     {
       id: 5,
       image: '/img/chair_35.jpg',
+      loading: 'lazy',
       title: 'Cafeteria Chair',
       style: 'Commercial Comfort'
     }
@@ -354,18 +359,21 @@ export default function Index() {
   const slides = [
     {
       image: '/img/banner5.jpg',
+      loading: 'lazy',
       title: 'Comfort Redefined',
       subtitle: 'Premium Seating Collection',
       description: 'Experience luxury with our ergonomically designed chairs'
     },
     {
       image: '/img/banner6.jpg',
+      loading: 'lazy',
       title: 'Style Meets Function',
       subtitle: 'Modern Chair Designs',
       description: 'Transform your space with contemporary elegance'
     },
     {
       image: '/img/banner7.jpg',
+      loading: 'lazy',
       title: 'Crafted Excellence',
       subtitle: 'Handpicked Collection',
       description: 'Where comfort meets sophisticated design'
@@ -596,7 +604,8 @@ export default function Index() {
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="product-image"
+                      className="product-image" 
+                       loading="lazy"
                     />
                   </div>
                   <h3 className="product-title">{product.name}</h3>
@@ -672,7 +681,7 @@ export default function Index() {
                     >
                       {/* Background Image */}
                       <div className="card-image">
-                        <img src={mood.image} alt={mood.mood} />
+                        <img src={mood.image} alt={mood.mood}  loading="lazy"/>
                         <div className="image-overlay" style={{ background: mood.gradient }} />
                       </div>
 
@@ -804,6 +813,7 @@ export default function Index() {
                       src={chair.image}
                       alt={chair.title}
                       className="accordion-image"
+                       loading="lazy"
                     />
 
                     {/* Dark Overlay */}
@@ -899,6 +909,7 @@ export default function Index() {
               src="/img/background.png"
               alt="Architecture"
               className="split-image"
+               loading="lazy"
             />
           </div>
 
@@ -909,6 +920,7 @@ export default function Index() {
               // src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&h=1080&fit=crop&q=80"
               alt="Architecture"
               className="split-image"
+               loading="lazy"
             />
           </div>
         </div>
@@ -959,7 +971,7 @@ export default function Index() {
                     {item.icon ? (
                       <span className="icon-text">{item.icon}</span>
                     ) : (
-                      <img src={item.img} alt={item.title} />
+                      <img src={item.img} alt={item.title}  loading="lazy"/>
                     )}
                   </div>
 
@@ -980,7 +992,7 @@ export default function Index() {
                     {item.icon ? (
                       <span className="icon-text">{item.icon}</span>
                     ) : (
-                      <img src={item.img} alt={item.title} />
+                      <img src={item.img} alt={item.title}  loading="lazy"/>
                     )}
                   </div>
 
